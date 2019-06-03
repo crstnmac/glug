@@ -2,6 +2,7 @@ html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  background: #dfebff;
 }
 body {
   margin: 0;
@@ -42,10 +43,12 @@ template {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
+  text-decoration: none;
 }
 a:active,
 a:hover {
   outline-width: 0;
+  color: green;
 }
 abbr[title] {
   border-bottom: none;
@@ -619,4 +622,10 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 15px 50px ; /* 5px rounded corners */
 }
