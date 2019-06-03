@@ -48,7 +48,7 @@ a {
 a:active,
 a:hover {
   outline-width: 0;
-  color: green;
+
 }
 abbr[title] {
   border-bottom: none;
@@ -89,6 +89,7 @@ sup {
 }
 img {
   border-style: none;
+  border-radius: 15px;
 }
 svg:not(:root) {
   overflow: hidden;
@@ -624,8 +625,78 @@ pre tt:after {
   }
 }
 
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  border-radius: 15px 50px ; /* 5px rounded corners */
+.profile-img {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
+
+.profile-img::after {
+  content: "";
+  border-radius: 15px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.profile-img:hover {
+  -webkit-transform: scale(1.25, 1.25);
+  transform: scale(1.25, 1.25);
+}
+
+.profile-img:hover::after {
+    opacity: 1;
+}
+
+
+.depthButton {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 14px;
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+    background: #fff;
+    border-radius: 4px;
+    transition: all .3s ease;
+}
+
+.depthButton:hover {
+    color: #5778F3;
+    transform: translateY(-1px);
+    box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+}
+
+.exlink {
+    position: relative;
+}
+
+.exlink::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 70%;
+    left: -0.1px;
+    right: -0.1px;
+    bottom: 0;
+    transition: top .1s ease-in-out;
+    background-color: rgba(87,120,243,0.5);
+}
+
+.exlink:hover::after {
+    top: 0;
+}
+

@@ -5,7 +5,7 @@ import React from "react"
 
 
 const Header = ({ siteTitle }) => (
-  <header
+  <header 
     style={{
       background: `rgba(0,0,0,0)`,
       marginBottom: `1.45rem`,
@@ -21,13 +21,14 @@ const Header = ({ siteTitle }) => (
         padding: `1.45rem 1.0875rem`,
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      <h1  style={{ margin: 0 }}>
         <Link
+         // className="gradientText"
           to="/"
-          style={{
-            color: `#866bde`,
-            textDecoration: `none`,
-            filter: `drop-shadow(-0px 0px 15px rgba(53, 42, 87, 0.3))`,
+           style={{
+             color: `#866bde`,
+             textDecoration: `none`,
+             filter: `drop-shadow(-0px 0px 15px rgba(53, 42, 87, 0.3))`,
           }}
         >
           {siteTitle}

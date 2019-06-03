@@ -19,6 +19,7 @@ module.exports = {
       implementation: require("sass"),
     },
   },
+    `gatsby-plugin-emotion`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
