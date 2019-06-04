@@ -26,6 +26,7 @@ const Header = ({ siteTitle }) => (
          // className="gradientText"
           to="/"
            style={{
+             fontFamily: `Montserrat`,
              color: `#866bde`,
              textDecoration: `none`,
              filter: `drop-shadow(-0px 0px 15px rgba(53, 42, 87, 0.3))`,
