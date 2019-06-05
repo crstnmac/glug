@@ -8,9 +8,9 @@ const Top = () => (
 <div className="container" >
 <div className="cardGroup">
 <div className="card">
-<div className="cardContent">
-	<div  className="pic">
-      <Image/>
+<div className="cardContent ">
+	<div >
+      <Image filename="gatsby-astronaut.png" />
     </div>
 </div>
 </div>
