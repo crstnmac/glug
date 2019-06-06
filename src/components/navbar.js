@@ -1,87 +1,48 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
+import { Flex, Text, Heading } from "rebass"
+import styled from "styled-components"
 
+const Links = styled(Link)({
+  color: `#866bde`,
+  textDecoration: `none`,
+})
 
+const Logo = styled(Heading)({
+  fontFamily: "Montserrat",
+  fontWeight: "800",
+  color: `#866bde`,
+  textDecoration: `none`,
+  filter: `drop-shadow(-0px 0px 15px rgba(53, 42, 87, 0.3))`,
+})
+
+const MenuItems = styled(Text)({
+  marginRight: "20px",
+  fontFamily: "Arvo",
+  fontWeight: "bold",
+  display: "flex",
+  flexDirection: "row",
+  justifyContent: "flex-end",
+  alignItems: "center",
+  filter: `drop-shadow(-0px 0px 15px rgba(53, 42, 87, 0.3))`,
+})
 
 const Header = ({ siteTitle }) => (
-  <header 
-    style={{
-      background: `rgba(0,0,0,0)`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        display:`flex`,
-        flexDirection: `row`,
-        justifyContent:`space-between`,
-        margin: `2rem auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1  style={{ margin: 0 }}>
-        <Link
-         // className="gradientText"
-          to="/"
-           style={{
-             fontFamily: `Montserrat`,
-             color: `#866bde`,
-             textDecoration: `none`,
-             filter: `drop-shadow(-0px 0px 15px rgba(53, 42, 87, 0.3))`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+  <Flex flexDirection="row">
+    <Logo p={4} fontSize={[5]} width={1 / 2} justifyContent="flex-start">
+      <Links to="/">Glug Infinite</Links>
+    </Logo>
 
-      <div style={{ 
+    <Flex p={4} width={1 / 2} fontSize={[3, 4, 5]} justifyContent="flex-end">
+      <MenuItems>
+        <Links to="/team">Team</Links>
+      </MenuItems>
 
-        display:`flex`, 
-        flexDirection: `row`,
-        justifyContent:`flex-end`,
-        alignItems : 'center',
-        filter: `drop-shadow(-0px 0px 15px rgba(53, 42, 87, 0.3))`,
-      }} >
-        <h3 style={{ margin: 0 }}>
-        <Link
-          to="/team"
-          style={{
-            padding:`10px`,
-            color: `#866bde`,
-            textDecoration: `none`,
-
-          }}
-        >
-          Team
-        </Link>
-      </h3>
-
-      <h3 style={{ margin: 0 }}>
-        <Link
-          to="/about"
-          style={{
-            padding:`10px`,
-            color: `#866bde`,
-            textDecoration: `none`,
-          }}
-        >
-          About
-        </Link>
-      </h3>
-      </div>
-    </div>
-
-  </header>
+      <MenuItems>
+        <Links to="/about">About</Links>
+      </MenuItems>
+    </Flex>
+  </Flex>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header

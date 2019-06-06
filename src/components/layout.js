@@ -1,56 +1,23 @@
-/**
- * Layout component that queries for data
- * with Gatsby's StaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/static-query/
- */
-
 import React from "react"
-import PropTypes from "prop-types"
-import { StaticQuery, graphql } from "gatsby"
-import '../styles/styles.scss';
+import { ThemeProvider } from "styled-components"
+import theme from "../theme"
+import Navbar from "./navbar.js"
+import { Box } from "rebass"
+import XRay from "react-x-ray"
+import Footer from "../pages/footer"
 
+export default function Layout({ children }) {
+  return (
+    <React.StrictMode>
+      <ThemeProvider theme={theme}>
+        <Box>
+          <Navbar />
 
-import Header from "./navbar"
-// import "./layout.css"
-import "./layout.scss"
+          <Box>{children}</Box>
 
-const Layout = ({ children }) => (
-  <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
-          }
-        }
-      }
-    `}
-    render={data => (
-      <>
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <div
-          style={{
-            margin: `0 auto`,
-            maxWidth: 960,
-            padding: `0px 1.0875rem 1.45rem`,
-            paddingTop: 0,
-          }}
-        >
-          <main>{children}</main>
-          <footer>
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
-          </footer>
-        </div>
-      </>
-    )}
-  />
-)
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
+          <Footer />
+        </Box>
+      </ThemeProvider>
+    </React.StrictMode>
+  )
 }
-
-export default Layout

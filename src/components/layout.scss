@@ -1,16 +1,12 @@
-
 html {
-  
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   background: #dfebff;
-
 }
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
- 
 }
 article,
 aside,
@@ -51,7 +47,6 @@ a {
 a:active,
 a:hover {
   outline-width: 0;
-
 }
 abbr[title] {
   border-bottom: none;
@@ -662,44 +657,42 @@ pre tt:after {
 }
 
 .profile-img:hover::after {
-    opacity: 1;
+  opacity: 1;
 }
 
-
 .depthButton {
-    display: inline-block;
-    height: 40px;
-    line-height: 40px;
-    padding: 0 14px;
-    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
-    background: #fff;
-    border-radius: 4px;
-    transition: all .3s ease;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 14px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  background: #fff;
+  border-radius: 4px;
+  transition: all 0.3s ease;
 }
 
 .depthButton:hover {
-    color: #5778F3;
-    transform: translateY(-1px);
-    box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+  color: #5778f3;
+  transform: translateY(-1px);
+  box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1), 0 3px 6px rgba(0, 0, 0, 0.08);
 }
 
 .exlink {
-    position: relative;
+  position: relative;
 }
 
 .exlink::after {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 70%;
-    left: -0.1px;
-    right: -0.1px;
-    bottom: 0;
-    transition: top .1s ease-in-out;
-    background-color: rgba(87,120,243,0.5);
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 70%;
+  left: -0.1px;
+  right: -0.1px;
+  bottom: 0;
+  transition: top 0.1s ease-in-out;
+  background-color: rgba(87, 120, 243, 0.5);
 }
 
 .exlink:hover::after {
-    top: 0;
+  top: 0;
 }
-
