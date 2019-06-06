@@ -3,12 +3,15 @@ import { Box, Text, Link } from "rebass"
 import styled from "styled-components"
 
 const Foot = styled(Box)({
-	fontFamily: "Arvo,serif",
-	display: "block",
-	bottom: "0",
-	width: "100%",
-	position: "relative",
-	clear: "both",
+	fontFamily: "Arvo, serif",
+	display: "flex",
+	flexDirection: "row",
+	maxWidth: "1200px",
+	margin: "0 auto",
+	height: "auto",
+	width: "1 1/2",
+	flexWrap: "wrap",
+	justifyContent: "space-around",
 })
 
 const Info = styled(Box)({
@@ -22,6 +25,7 @@ const Links = styled(Link)({
 	color: "#866bde",
 	textDecoration: "none",
 	padding: "10px",
+	textAlign: "center",
 })
 
 const Column = styled(Box)({
@@ -37,41 +41,40 @@ const Column = styled(Box)({
 })
 
 const Copyright = styled(Box)({
-	display: "flex",
+	display: "block",
 	justifyContent: "center",
+	textAlign: "center",
 	fontWeight: "700",
 	fontFamily: "Montserrat, san-serif",
+	width: "100%",
 })
 
 const Footer = ({ siteTitle }) => (
 	<Foot>
-		<Info>
-			<Column>
-				<Links href="https://github.com/gluginfinte">GitHub</Links>
-			</Column>
-			<Column>
-				<Links href="https://github.com/gluginfinte/code-of-conduct">
-					Community Guidelines
-				</Links>
+		<Column>
+			<Links href="https://github.com/gluginfinte">GitHub</Links>
+		</Column>
+		<Column>
+			<Links href="https://github.com/gluginfinte/code-of-conduct">
+				Community Guidelines
+			</Links>
 
-				<Links href="https://github.com/gluginfinte/code-of-conduct">
-					Code of Conduct
-				</Links>
-			</Column>
-			<Column>
-				<Text>
-					<strong>Glug Infinite</strong>
-					<br />
-					Vivekananda College of Engineering and Technology - ,Puttur
-					<br />
-					<br />
-					gluginfinte@vcetputtur.ac.in
-					<br />
-					+91 8722680069
-				</Text>
-			</Column>
-		</Info>
-
+			<Links href="https://github.com/gluginfinte/code-of-conduct">
+				Code of Conduct
+			</Links>
+		</Column>
+		<Column>
+			<Text>
+				<strong>Glug Infinite</strong>
+				<br />
+				Vivekananda College of Engineering and Technology - ,Puttur
+				<br />
+				<br />
+				gluginfinte@vcetputtur.ac.in
+				<br />
+				+91 8722680069
+			</Text>
+		</Column>
 		<Copyright>
 			<p> Glug Infinite © {new Date().getFullYear()}</p>
 		</Copyright>
