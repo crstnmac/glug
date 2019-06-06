@@ -30,6 +30,14 @@ const Right = styled(Box)({
 	alignContent: "center",
 })
 
+const Heading = styled(Box)({
+	fontFamily: "Montserrat",
+	paddingLeft:"30px",
+    fontWeight: "800",
+    fontSize :"50px",
+  	filter: `drop-shadow(-0px 0px 15px rgba(53, 42, 87, 0.3))`,
+})
+
 const Pic = styled(Image)({})
 
 const Top = () => (
@@ -43,13 +51,10 @@ const Top = () => (
 		</Box>
 
 		<Box width={[1, 1 / 2]} alignSelf="center">
+			<Heading >GLUG</Heading>
 			<Right>
-				Free Software Movement Karnataka is a registered not-for-profit
-				organization. Our primary objective is to create and spread awareness of
-				Free Software technologies in different strata of society. We are driven
-				by volunteers, who by day are software engineers, students,
-				academicians, or government officials, and by night are Free Software
-				evangelists.
+
+				GLUGs(GNU/Linux user groups) are the means of spreading the idea of free software, hardware, and philosphy in campuses. GLUGs serve as a base to technically empower yourself and interact with professionals, right from installation of Linux to hacking the kernel, web technologies like drupal and mastering the latest python module, at the same time raising questions of self reliance.
 			</Right>
 		</Box>
 		

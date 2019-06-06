@@ -30,24 +30,27 @@ const Right = styled(Box)({
 	padding: "30px",
 	alignContent: "center",
 })
+const Heading = styled(Box)({
+	fontFamily: "Montserrat",
+	paddingLeft:"30px",
+    fontWeight: "800",
+    fontSize :"50px",
+  	filter: `drop-shadow(-0px 0px 15px rgba(53, 42, 87, 0.3))`,
+})
 
 const Pic = styled(Image)({})
 
 const Middle = () => (
 	<Container>
 		<Box width={[1, 1 / 2]} alignSelf="center">
+			<Heading>Purpose</Heading>
 			<Right>
-				Free Software Movement Karnataka is a registered not-for-profit
-				organization. Our primary objective is to create and spread awareness of
-				Free Software technologies in different strata of society. We are driven
-				by volunteers, who by day are software engineers, students,
-				academicians, or government officials, and by night are Free Software
-				evangelists.
+				The purpose of a GLUG is to equip students with FOSS and make them understand how FOSS is developed and why is it done so. While doing that - how one can contribute back to FOSS.It is a gathering of like minded people, where people speak about Freedom Software Philosophy and create awareness about the ‘usage’ of Freedom Software.
 			</Right>
 		</Box>
 		<Box width={[1, 1 / 2]} alignSelf="center">
 			<Left>
-				<Pic filename="good_team.png" />
+				<Pic filename="open_source.png" />
 			</Left>
 		</Box>
 	</Container>

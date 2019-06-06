@@ -1,7 +1,7 @@
 import React from "react"
 import Image from "../../components/image"
 import styled from "styled-components"
-import { Box } from "rebass"
+import { Box,Text } from "rebass"
 
 const Container = styled(Box)({
 	fontFamily: "Arvo, serif",
@@ -31,23 +31,28 @@ const Right = styled(Box)({
 	alignContent: "center",
 })
 
+const Heading = styled(Box)({
+	fontFamily: "Montserrat",
+	paddingLeft:"30px",
+    fontWeight: "800",
+    fontSize :"50px",
+  	filter: `drop-shadow(-0px 0px 15px rgba(53, 42, 87, 0.3))`,
+})
+
 const Pic = styled(Image)({})
 
 const Bottom = () => (
 	<Container>
 		<Box width={[1, 1 / 2]} alignSelf="center">
 			<Left>
-				<Pic filename="good_team.png" />
+
+				<Pic filename="teaching.png" />
 			</Left>
 		</Box>
 		<Box width={[1, 1 / 2]} alignSelf="center">
+			<Heading>We Teach</Heading>
 			<Right>
-				Free Software Movement Karnataka is a registered not-for-profit
-				organization. Our primary objective is to create and spread awareness of
-				Free Software technologies in different strata of society. We are driven
-				by volunteers, who by day are software engineers, students,
-				academicians, or government officials, and by night are Free Software
-				evangelists.
+				We often do meetups in the college premises,and share the knowledge.The main goal is to share information and to develop critical thinking. Some might say that this is what turns information into knowledge. We respect and celebrate your individuality. We treat you as a human being, not as a product.We respect Learn-Think-Do-Share-Apply platform.....as opposed to a Come-Share-Go platform.
 			</Right>
 		</Box>
 	</Container>
