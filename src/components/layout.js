@@ -3,7 +3,6 @@ import { ThemeProvider } from "styled-components"
 import theme from "../theme"
 import Navbar from "./navbar.js"
 import { Box } from "rebass"
-import XRay from "react-x-ray"
 import Footer from "../pages/footer"
 
 export default function Layout({ children }) {

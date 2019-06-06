@@ -2,7 +2,6 @@ import React from "react"
 import Image from "../../components/image"
 import styled from "styled-components"
 import { Box } from "rebass"
-
 const Container = styled(Box)({
 	fontFamily: "Arvo, serif",
 	display: "flex",
@@ -34,12 +33,15 @@ const Right = styled(Box)({
 const Pic = styled(Image)({})
 
 const Top = () => (
+
 	<Container>
+	
 		<Box width={[1, 1 / 2]} alignSelf="center">
 			<Left>
 				<Pic filename="good_team.png" />
 			</Left>
 		</Box>
+
 		<Box width={[1, 1 / 2]} alignSelf="center">
 			<Right>
 				Free Software Movement Karnataka is a registered not-for-profit
@@ -50,7 +52,9 @@ const Top = () => (
 				evangelists.
 			</Right>
 		</Box>
+		
 	</Container>
+
 )
 
 export default Top

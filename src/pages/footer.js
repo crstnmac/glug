@@ -1,5 +1,5 @@
 import React from "react"
-import { Box, Text, Link } from "rebass"
+import { Box, Text, } from "rebass"
 import styled from "styled-components"
 
 const Foot = styled(Box)({
@@ -14,19 +14,18 @@ const Foot = styled(Box)({
 	justifyContent: "space-around",
 })
 
-const Info = styled(Box)({
-	display: "flex",
-	padding: " 10px",
-	justifyContent: "space-between",
-	flexDirection: "row",
-})
+const Links = styled.a`
+	color: #866bde;
+	text-decoration: none;
+	padding: 10px;
+	text-align: center;
 
-const Links = styled(Link)({
-	color: "#866bde",
-	textDecoration: "none",
-	padding: "10px",
-	textAlign: "center",
-})
+	&:hover{
+		  text-shadow: 0 8px 14px rgba(33,33,33,.1);
+
+	}
+
+`
 
 const Column = styled(Box)({
 	display: "flex",
