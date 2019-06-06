@@ -8,18 +8,16 @@ import Footer from "../pages/footer"
 
 export default function Layout({ children }) {
   return (
-    <XRay>
-      <React.StrictMode>
-        <ThemeProvider theme={theme}>
-          <Box>
-            <Navbar />
+    <React.StrictMode>
+      <ThemeProvider theme={theme}>
+        <Box>
+          <Navbar />
 
-            <Box>{children}</Box>
+          <Box>{children}</Box>
 
-            <Footer />
-          </Box>
-        </ThemeProvider>
-      </React.StrictMode>
-    </XRay>
+          <Footer />
+        </Box>
+      </ThemeProvider>
+    </React.StrictMode>
   )
 }
