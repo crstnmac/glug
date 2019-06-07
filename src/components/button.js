@@ -20,7 +20,7 @@ const StyledButton = styled.button`
 	background: -webkit-linear-gradient(to right, #13f3b9 0%, #5878f3 50%);	
 	background: -moz-linear-gradient(to right, #13f3b9 0%, #5878f3 50%);	
 
-	background-clip: text;
+	-webkit-background-clip: text;
 	&:hover {
 		backgroundposition: 0 0;
 		outline: none;
