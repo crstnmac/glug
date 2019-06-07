@@ -4,8 +4,8 @@ import Loader from "./Loader"
 
 const StyledButton = styled.button`
 	
-	background-color: ${props => (props.secondary ? "#F7A072" : "#fff")};
-	color: #fff;
+	background-color: "#fff";
+	
 	color: transparent;
 	transition-duration: 0.3s;
 	padding: 10px 15px;
