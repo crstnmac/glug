@@ -22,9 +22,8 @@ const About = () => (
   <Layout>
   <Container>
     <SEO title="About" />
-    <h1>About</h1>
-<Button>Hello</Button>	
-	<Card primary>About</Card>
+    <h1>Blog</h1>
+<Button>Comming soon.....</Button>
   </Container>
   </Layout>
 )

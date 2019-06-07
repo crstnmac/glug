@@ -8,7 +8,7 @@ const animatedCss = css`
 
 const primaryCss = css`
   background-color: #F0F0F0;
-  color: "353839";
+  color: "#353839";
 `
 
 const StyledCard = styled.div`
@@ -18,12 +18,12 @@ const StyledCard = styled.div`
   transform: translateY(50px);
   transition: 500ms all ease-in-out;
   margin: ${props => (props.noMargin ? 0 : "15px")};
-  border-radius: 5px;
+  border-radius: 25px;
   ${props => props.animated && animatedCss}
   ${props => props.primary && primaryCss}
 
 &:hover{
-  box-shadow: 0 8px 14px rgba(33,33,33,.1);
+  box-shadow: 0 8px 16px rgba(50, 50, 93, 0.1), 0 6px 12px rgba(0, 128, 255, 0.3);
   background-color: #fff;
 
 }

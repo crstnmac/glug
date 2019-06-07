@@ -3,7 +3,7 @@ import styled, { css } from "styled-components"
 import Loader from "./Loader"
 
 const StyledButton = styled.button`
-	border-radius: 10px;
+	
 	background-color: ${props => (props.secondary ? "#F7A072" : "#fff")};
 	color: #fff;
 	color: transparent;
@@ -15,7 +15,8 @@ const StyledButton = styled.button`
 	outline: none;
 	border: none;
 	cursor: pointer;
-	margin: 15px;
+	height:45px;
+	border-radius: 20px;
 	background: linear-gradient(to right, #13f3b9 0%, #5878f3 50%);	
 	background-clip: text;
 	&:hover {
@@ -26,10 +27,10 @@ const StyledButton = styled.button`
 	}
 `
 
-const Button = ({ secondary, big, inverse, loading, children, ...props }) => {
+const Button = ({  children, }) => {
 	return (
-		<StyledButton secondary={secondary} big={big} inverse={inverse} {...props}>
-			{loading ? <Loader small white /> : children}
+		<StyledButton>
+			{children}
 		</StyledButton>
 	)
 }

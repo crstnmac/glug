@@ -15,14 +15,15 @@ const Foot = styled(Box)({
 })
 
 const Links = styled.a`
-	color: #866bde;
+	color: #7a49ff;
 	text-decoration: none;
 	padding: 10px;
 	text-align: center;
+	transition: all 1s;
 
 	&:hover{
 		  text-shadow: 0 8px 14px rgba(33,33,33,.1);
-
+		  color: #3f0f63;
 	}
 
 `
@@ -46,6 +47,7 @@ const Copyright = styled(Box)({
 	fontWeight: "700",
 	fontFamily: "Montserrat, san-serif",
 	width: "100%",
+
 })
 
 const Footer = ({ siteTitle }) => (

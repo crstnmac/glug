@@ -4,16 +4,16 @@ import { Flex, Text, Heading } from "rebass"
 import styled from "styled-components"
 
 const Links = styled(Link)({
-  color: `#866bde`,
-  textDecoration: `none`,
+  color: "#7a49ff",
+  textDecoration: "none",
 })
 
 const Logo = styled(Heading)({
   fontFamily: "Montserrat",
   fontWeight: "800",
-  color: `#866bde`,
-  textDecoration: `none`,
-  filter: `drop-shadow(-0px 0px 15px rgba(53, 42, 87, 0.3))`,
+  color: "#7a49ff",
+  textDecoration: "none",
+  filter: "drop-shadow(-0px 0px 15px rgba(53, 42, 87, 0.3))",
 })
 
 const MenuItems = styled(Text)({
@@ -24,12 +24,12 @@ const MenuItems = styled(Text)({
   flexDirection: "row",
   justifyContent: "flex-end",
   alignItems: "center",
-  filter: `drop-shadow(-0px 0px 15px rgba(53, 42, 87, 0.3))`,
+  filter: "drop-shadow(-0px 0px 15px rgba(53, 42, 87, 0.3))",
 })
 
 const Header = ({ siteTitle }) => (
-  <Flex flexDirection="row">
-    <Logo p={4} fontSize={[5]} width={1 / 2} justifyContent="flex-start">
+  <Flex flexDirection="row"   >
+    <Logo p={4} fontSize={[4,5,7]} width={1 / 2} justifyContent="flex-start">
       <Links to="/">Glug Infinite</Links>
     </Logo>
 
@@ -39,7 +39,7 @@ const Header = ({ siteTitle }) => (
       </MenuItems>
 
       <MenuItems>
-        <Links to="/about">About</Links>
+        <Links to="/blog">Blog</Links>
       </MenuItems>
     </Flex>
   </Flex>

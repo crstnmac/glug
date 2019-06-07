@@ -12,8 +12,8 @@ const Image = props => (
               relativePath
               name
               childImageSharp {
-                sizes(maxWidth: 600) {
-                  ...GatsbyImageSharpSizes
+                fluid(maxWidth: 1000) {
+                  ...GatsbyImageSharpFluid_tracedSVG
                 }
               }
             }
@@ -29,8 +29,8 @@ const Image = props => (
         return null
       }
 
-      const imageSizes = image.node.childImageSharp.sizes
-      return <Img alt={props.alt} sizes={imageSizes} />
+      const imageFluid = image.node.childImageSharp.fluid
+      return <Img alt={props.alt} fluid={imageFluid} />
     }}
   />
 )
