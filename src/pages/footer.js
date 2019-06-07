@@ -24,7 +24,7 @@ const Links = styled.a`
 	&:hover{
 		  text-shadow: 0 8px 14px rgba(33,33,33,.1);
 		  color: #7a49ff;
-		  
+
 	}
 
 `
@@ -54,14 +54,14 @@ const Copyright = styled(Box)({
 const Footer = ({ siteTitle }) => (
 	<Foot>
 		<Column>
-			<Links href="https://github.com/gluginfinte">GitHub</Links>
+			<Links href="https://github.com/cristonkrizz/glug">GitHub</Links>
 		</Column>
 		<Column>
-			<Links href="https://github.com/gluginfinte/code-of-conduct">
+			<Links href="https://github.com/cristonkrizz/glug/CODE_OF_CONDUCT.md">
 				Community Guidelines
 			</Links>
 
-			<Links href="https://github.com/gluginfinte/code-of-conduct">
+			<Links href="https://github.com/cristonkrizz/glug/CODE_OF_CONDUCT.md">
 				Code of Conduct
 			</Links>
 		</Column>
