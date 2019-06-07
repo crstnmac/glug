@@ -14,6 +14,7 @@ const Logo = styled(Heading)({
   color: "#7a49ff",
   textDecoration: "none",
   filter: "drop-shadow(-0px 0px 15px rgba(53, 42, 87, 0.3))",
+
 })
 
 const MenuItems = styled(Text)({
@@ -28,7 +29,7 @@ const MenuItems = styled(Text)({
 })
 
 const Header = ({ siteTitle }) => (
-  <Flex flexDirection="row"   >
+  <Flex flexDirection="row">
     <Logo p={4} fontSize={[4,5,7]} width={1 / 2} justifyContent="flex-start">
       <Links to="/">Glug Infinite</Links>
     </Logo>

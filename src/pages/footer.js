@@ -23,7 +23,8 @@ const Links = styled.a`
 
 	&:hover{
 		  text-shadow: 0 8px 14px rgba(33,33,33,.1);
-		  color: #3f0f63;
+		  color: #7a49ff;
+		  
 	}
 
 `
