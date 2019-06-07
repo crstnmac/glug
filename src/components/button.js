@@ -15,6 +15,8 @@ const StyledButton = styled.button`
 	background: -webkit-linear-gradient(top right ,#13f3b9, #5878f3 );	
 	-webkit-background-clip:text;
 	-webkit-text-fill-color:transparent;
+	-webkit-font-smoothing: antialiased;
+	  font-weight: bolder;
 	transition-duration: 0.3s;
 	padding: 10px 15px;
 	transition: all 0.3s ease-in;
