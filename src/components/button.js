@@ -17,10 +17,11 @@ const StyledButton = styled.button`
 	cursor: pointer;
 	height:45px;
 	border-radius: 20px;
-	background: -webkit-linear-gradient(to right, #13f3b9 0%, #5878f3 50%);	
-	background: -moz-linear-gradient(to right, #13f3b9 0%, #5878f3 50%);	
+	background: -webkit-linear-gradient(#13f3b9 , #5878f3 );	
+	background: -moz-linear-gradient( #13f3b9 , #5878f3 );	
 
 	-webkit-background-clip: text;
+	  -webkit-text-fill-color: transparent;
 	&:hover {
 		backgroundposition: 0 0;
 		outline: none;
