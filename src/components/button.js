@@ -17,7 +17,9 @@ const StyledButton = styled.button`
 	cursor: pointer;
 	height:45px;
 	border-radius: 20px;
-	background: linear-gradient(to right, #13f3b9 0%, #5878f3 50%);	
+	background: -webkit-linear-gradient(to right, #13f3b9 0%, #5878f3 50%);	
+	background: -moz-linear-gradient(to right, #13f3b9 0%, #5878f3 50%);	
+
 	background-clip: text;
 	&:hover {
 		backgroundposition: 0 0;
