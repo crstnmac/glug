@@ -45,7 +45,7 @@ const StyledButton = styled.button`
   text-decoration: none;
   background: -webkit-linear-gradient(top right ,#7a49ff, #5878f3 );	
   -webkit-font-smoothing: smooth;
-
+  fontWeight :'bolder';
   border-radius: 30px;
   z-index: 1;
   outline:none;
@@ -69,6 +69,7 @@ const StyledButton = styled.button`
   filter: blur(20px);
   opacity: 0;
   transition: all 1s;
+
 }
 
 &:hover:before{
