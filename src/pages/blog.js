@@ -10,7 +10,7 @@ const Container = styled(Box)({
 	fontFamily: "Arvo, serif",
 	display: "flex",
 	flexDirection: "row",
-	maxWidth: "1200px",
+	maxWidth: "1280px",
 	margin: "0 auto",
 	height: "auto",
 	width: "1 1/2",

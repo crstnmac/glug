@@ -8,7 +8,7 @@ const Container = styled(Box)({
 	fontFamily: "Arvo, serif",
 	display: "flex",
 	flexDirection: "row",
-	maxWidth: "1200px",
+	maxWidth: "1280px",
 	margin: "0 auto",
 	height: "auto",
 	width: "1 1/2",
@@ -40,7 +40,7 @@ const Heading = styled(Box)({
 })
 
 const Link = styled.a`
-	color:transparent;
+	color:"inherited";
 	text-decoration: none;
 	text-align: center;
 `
@@ -65,7 +65,7 @@ const Top = () => (
 			
 			</Right>
 			
-			<Button ><Link href="https://fsmk.org/glugs"> Learn More</Link> </Button>
+			<Link href="https://fsmk.org/glugs"><Button > Learn More </Button></Link>
 		</Box>
 		
 	</Container>
