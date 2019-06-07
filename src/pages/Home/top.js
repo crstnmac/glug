@@ -43,6 +43,10 @@ const Link = styled.a`
 	color:"inherited";
 	text-decoration: none;
 	text-align: center;
+	
+	background-clip: text;
+-webkit-background-clip: text;
+
 `
 
 const Pic = styled(Image)({})
