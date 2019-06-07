@@ -45,7 +45,7 @@ const StyledButton = styled.button`
   text-decoration: none;
   background: -webkit-linear-gradient(top right ,#7a49ff, #5878f3 );	
   -webkit-font-smoothing: smooth;
-  fontWeight :'bolder';
+  fontStyle :'bold';
   border-radius: 30px;
   z-index: 1;
   outline:none;
