@@ -5,9 +5,7 @@ import Loader from "./Loader"
 const StyledButton = styled.button`
 	
 	background-color: ${props => (props.secondary ? "#F7A072" : "#fff")};
-background-clip: text;
--webkit-background-clip: text;
-color: transparent;
+
 	transition-duration: 0.3s;
 	padding: 10px 15px;
 	transition: all 0.3s ease-in;
@@ -21,7 +19,10 @@ color: transparent;
 	background: -webkit-linear-gradient(to right, #13f3b9 0%, #5878f3 50%);	
 	background: -moz-linear-gradient(to right, #13f3b9 0%, #5878f3 50%);	
 
-	
+	background-clip: text;
+	color: transparent;
+	-webkit-background-clip:"text" ;
+	color:transparent;
 	&:hover {
 		backgroundposition: 0 0;
 		outline: none;

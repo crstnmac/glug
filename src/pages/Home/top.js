@@ -44,7 +44,7 @@ const Link = styled.a`
 	text-decoration: none;
 	text-align: center;
 
-	
+	-webkit-background-clip:"text";
 
 `
 
@@ -68,8 +68,8 @@ const Top = () => (
 			
 			</Right>
 			
-			<Link href="https://fsmk.org/glugs"><Button background-clip= "text"
--webkit-background-clip="text" > Learn More </Button></Link>
+			<Link href="https://fsmk.org/glugs"><Button backgroundClip= "text"
+> Learn More </Button></Link>
 		</Box>
 		
 	</Container>
