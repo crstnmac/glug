@@ -5,9 +5,9 @@ const StyledButton = styled.button`
   font-family:Arvo;
   position: absolute;
   width: auto;
-  height:50px;
+  height:40px;
   text-align: center;
-  line-height: 50px;
+  
   color: #fff;
   border:none;
   fontWeight :bold;
