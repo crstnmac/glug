@@ -30,7 +30,7 @@ const Logo = styled(Heading)({
   justifyContent: "flex-start",
   alignItems: "center",
   filter: "drop-shadow(-0px 0px 15px rgba(53, 42, 87, 0.3))",
-
+  zIndex:"1",
 })
 
 const MenuItems = styled(Text)({

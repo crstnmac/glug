@@ -61,7 +61,7 @@ const Top = () => (
 		</Box>
 
 		<Box width={[1, 1 / 2]} alignSelf="center" p={3}>
-			<Heading >GLUG</Heading>
+			<Heading >GLUG //♾️// </Heading>
 			<Right>
 
 				GLUGs(GNU/Linux user groups) are the means of spreading the idea of free software, hardware, and philosphy in campuses. GLUGs serve as a base to technically empower yourself and interact with professionals, right from installation of Linux to hacking the kernel, web technologies like drupal and mastering the latest python module, at the same time raising questions of self reliance.

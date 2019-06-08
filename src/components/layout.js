@@ -5,12 +5,12 @@ import Navbar from "./navbar"
 import { Box } from "rebass"
 import Footer from "../pages/footer"
 import GlobalStyle from "./globalStyle"
-
+import Xray from "react-x-ray"
 
 export default function Layout({ children }) {
   return (
     <React.StrictMode>
-   
+   <Xray>
       <ThemeProvider theme={theme}>
         
         <Box >
@@ -25,7 +25,7 @@ export default function Layout({ children }) {
         
         
       </ThemeProvider>
-   
+   </Xray>
     </React.StrictMode>
   )
 }

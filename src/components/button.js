@@ -9,18 +9,16 @@ const StyledButton = styled.button`
   text-align: center;
   line-height: 50px;
   color: #fff;
-  
   border:none;
-  
+  fontWeight :bold;
   cursor:pointer;
   font-size: 15px;
-  text-transform: uppercase;
   text-decoration: none;
   background: -webkit-linear-gradient(top right ,#7a49ff, #5878f3 );	
   -webkit-font-smoothing: smooth;
   fontStyle :'bold';
   border-radius: 30px;
-  z-index: 1;
+  z-index:1;
   outline:none;
 }
 

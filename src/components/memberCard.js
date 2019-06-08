@@ -12,7 +12,7 @@ const Memcard= styled(Card)({
   display: "flex",
   flexDirection: "row",
   alignItems: "center",
-  backgroundColor:"#F0F0F0"
+  backgroundColor:"#F0F0F0",
 })
 
 const Image =styled.img`
