@@ -5,7 +5,7 @@ ghpages.publish(
   'public',
   {
     branch: 'master',
-    repo: 'https://github.com/gluginfinite/glug-infinite.github.io.git',
+    repo: 'https://github.com/gluginfinite/gluginfinite.github.io.git',
   },
   () => {
     console.log('Deploy Complete!')
