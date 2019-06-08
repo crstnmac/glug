@@ -12,7 +12,7 @@ const NavBar = styled.div`
   z-index: 200;
   height: 80px;
   background-color: rgb(255,255,255);
-  box-shadow: 0 2px 4px 0 rgba(127, 0, 255, 0.12);
+  box-shadow: 0 5px 30px rgba(127, 0, 255, 0.15);
 `
 
 const Links = styled(Link)({
