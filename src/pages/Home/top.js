@@ -56,7 +56,7 @@ const Top = () => (
 	
 		<Box width={[1, 1 / 2]} alignSelf="center" p={3}>
 			<Left>
-				<Pic filename="good_team.svg" />
+				<Pic filename="good_team.png"/>
 			</Left>
 		</Box>
 
@@ -68,8 +68,7 @@ const Top = () => (
 			
 			</Right>
 			
-			<Link href="https://fsmk.org/glugs"><Button backgroundClip= "text"
-> Learn More </Button></Link>
+			<Link href="https://fsmk.org/glugs"><Button > Learn More</Button></Link>
 		</Box>
 		
 	</Container>

@@ -48,7 +48,7 @@ const Middle = () => (
 		</Box>
 		<Box width={[1, 1 / 2]} alignSelf="center" p={3}>
 			<Left>
-				<Pic filename="open_source.svg" />
+				<Pic filename="open_source.png" />
 			</Left>
 		</Box>
 	</Container>

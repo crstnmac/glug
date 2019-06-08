@@ -2,13 +2,13 @@ import React from "react"
 import Button from "../components/button"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Card from "../components/card"
 import styled from "styled-components"
 import {Box} from "rebass"
 
 const Container = styled(Box)({
 	fontFamily: "Arvo, serif",
 	display: "flex",
+	paddingTop:"64px",
 	flexDirection: "row",
 	maxWidth: "1280px",
 	margin: "0 auto",

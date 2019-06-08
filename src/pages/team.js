@@ -1,10 +1,8 @@
 import React from "react"
-import Button from "../components/button"
 import Layout from "../components/layout"
 import Card from "../components/memberCard"
 import styled from "styled-components"
-import {Box,Text} from "rebass"
-
+import {Box} from "rebass"
 
 function getMembers(data) {
   let members = []
@@ -29,6 +27,7 @@ const OutContainer = styled(Box)({
 	display: "flex",
 	flexDirection: "row",
 	maxWidth: "1280px",
+	paddingTop:"60px",
 	margin: "0 auto",
 	height: "auto",
 	flexWrap: "wrap",

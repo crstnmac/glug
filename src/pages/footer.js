@@ -17,10 +17,9 @@ const Foot = styled(Box)({
 const Links = styled.a`
 	color: #7a49ff;
 	text-decoration: none;
-	padding: 10px;
+	padding: 5px;
 	text-align: center;
 	transition: all 1s;
-
 	&:hover{
 		  text-shadow: 0 8px 14px rgba(33,33,33,.1);
 		  color: #7a49ff;
@@ -31,14 +30,16 @@ const Links = styled.a`
 
 const Column = styled(Box)({
 	display: "flex",
-	flexGrow: "0",
-	flexBasis: "33.33%",
+	
+	flexBasis: "50%",
 	flexDirection: "column",
-	alignContent: "flex-start",
+	alignContent: "middle",
+	flexFlow:"column",
 	padding: "10px",
 	color: "#866bde",
 	fontWeight: "700",
 	fontFamily: "Montserrat, san-serif",
+	flexWrap:"wrap",
 })
 
 const Copyright = styled(Box)({
@@ -55,30 +56,31 @@ const Footer = ({ siteTitle }) => (
 	<Foot>
 		<Column>
 			<Links href="https://github.com/cristonkrizz/glug">GitHub</Links>
+
+			<Links href="https://discuss.fsmk.org/">Disqus</Links>
 		</Column>
 		<Column>
-			<Links href="https://github.com/cristonkrizz/glug/CODE_OF_CONDUCT.md">
+			<Links href="https://gist.github.com/cristonkrizz/8c7a493530ca799feb83487a5bd234f9">
 				Community Guidelines
 			</Links>
 
-			<Links href="https://github.com/cristonkrizz/glug/CODE_OF_CONDUCT.md">
-				Code of Conduct
+			<Links href="https://gist.github.com/cristonkrizz/8c7a493530ca799feb83487a5bd234f9">
+				Code of Conduct 
 			</Links>
 		</Column>
 		<Column>
-			<Text>
+			<Text justifyContent="center" textAlign = "center" >
 				<strong>Glug Infinite</strong>
 				<br />
-				Vivekananda College of Engineering and Technology - ,Puttur
+				Vivekananda College of Engineering and Technology,Puttur-574203
 				<br />
-				<br />
-				
 				<br />
 				
 			</Text>
 		</Column>
-		<Copyright>
-			<p> Glug Infinite © {new Date().getFullYear()}</p>
+		<Copyright >
+			<p> Glug Infinite © {new Date().getFullYear()} Made with ❤️ & 🔨 by<Links href="https://github.com/cristonkrizz">Cris</Links></p>
+
 		</Copyright>
 	</Foot>
 )
