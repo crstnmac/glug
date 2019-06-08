@@ -53,7 +53,7 @@ const Bottom = () => (
 	
 		<Box width={[1, 1 / 2]} alignSelf="center" p={3}>
 			<Left>
-				<Pic filename="teaching.png" />
+				<Pic filename="teaching.svg" />
 			</Left>
 		</Box>
 

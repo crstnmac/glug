@@ -72,9 +72,9 @@ const Footer = ({ siteTitle }) => (
 				Vivekananda College of Engineering and Technology - ,Puttur
 				<br />
 				<br />
-				gluginfinte@vcetputtur.ac.in
+				
 				<br />
-				+91 8722680069
+				
 			</Text>
 		</Column>
 		<Copyright>
