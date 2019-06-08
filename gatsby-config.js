@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Glug Infinite`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: `FOSS Club`,
+    author: `@github:cristonkrizz`,
   },
   plugins: [
     `gatsby-plugin-styled-components`,
