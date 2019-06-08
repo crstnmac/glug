@@ -26,6 +26,7 @@ const Left = styled(Box)({
 const Right = styled(Box)({
 	display: "flex",
 	width: "100%",
+	flexWrap:"wrap",
 	justifyContent: "space-around",
 	alignContent: "center",
 	marginBottom:"15px",
@@ -67,8 +68,8 @@ const Top = () => (
 				GLUGs(GNU/Linux user groups) are the means of spreading the idea of free software, hardware, and philosphy in campuses. GLUGs serve as a base to technically empower yourself and interact with professionals, right from installation of Linux to hacking the kernel, web technologies like drupal and mastering the latest python module, at the same time raising questions of self reliance.
 			
 			</Right>
+		<Link href="https://fsmk.org/about" ><Button>Know More </Button></Link>	
 			
-			<Link href="https://fsmk.org/glugs"><Button > Learn More</Button></Link>
 		</Box>
 		
 	</Container>
