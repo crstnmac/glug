@@ -84,7 +84,7 @@ const Team = ({data}) => (
             designation="FSMK Member"  />
 	</Box>
 	<Box width={[1,1/3]} paddingLeft = {[50,0,0]}>
-	<Card   username="a007"
+	<Card   username="Being007"
             full_name="Akshay Irodi "
             designation="FSMK Member"  />
 	</Box>
