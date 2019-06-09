@@ -1,7 +1,7 @@
 ---
 path: "/hello-world"
 date: 2019-06-09 
-title: "My First Gatsby Post"
+title: "Posts Comming soon.."
 ---
 
-Oooooh-weeee, my first blog post!
+Oooooh-weeee, So as you have reached here, I wanna tell you that something big is comming!
