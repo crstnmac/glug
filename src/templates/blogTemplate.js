@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react"
+import Button from "../components/button"
+import Layout from "../components/layout"
+import SEO from "../components/seo"
 import Card from '../components/card'
-import Layout from '../components/layout'
 import { graphql } from 'gatsby'
 import styled from "styled-components"
 import {Box,Text} from "rebass"
+import {Helmet} from "react-helmet"
 
 const OutContainer = styled(Box)({
   fontFamily: "Arvo, serif",
@@ -57,9 +60,6 @@ const BlogDetails = styled(Box)({
       display: "flex",
       flexDirection: "column",
       alignItems: "flex-start",
-      
-      
-
 })
 
 const Link = styled.a`
@@ -71,59 +71,34 @@ const Link = styled.a`
 
 `
 
-export default function Index({ data }) {
-  const { edges: posts } = data.allMarkdownRemark
+export default function Template({
+  data, // this prop will be injected by the GraphQL query below.
+}) {
+  const { markdownRemark } = data // data.markdownRemark holds our post data
+  const { frontmatter, html } = markdownRemark
   return (
-  <Layout>
-  <OutContainer>
-  <Box width={[1]}>
-  <Heading>Blog</Heading>
-  </Box>
-  <Container>
-      {posts
-        .filter(post => post.node.frontmatter.title.length > 0)
-        .map(({ node: post }) => {
-          return (
-            <Link href={post.frontmatter.path}  key={post.id} textDecoration = 'none' >
-            <Box >
-              <BlogCard> 
-              <BlogDetails  p={2} >       
-              <Text fontSize ={[2]} my={2} fontWeight = 'bolder'>
-                {post.frontmatter.title}
-              </Text>
-              <Text fontSize ={[2]}>{post.frontmatter.date}</Text>
-              <p>{post.excerpt}</p>
-            </BlogDetails>
-            </BlogCard>
-            </Box>
 
-           </Link>
-          )
-        }
-        )
-      }
-      </Container>
-       </OutContainer>
+    <Layout>
+      <div className="blog-post">
+        <h1>{frontmatter.title}</h1>
+        <h2>{frontmatter.date}</h2>
+        <div
+          className="blog-post-content"
+          dangerouslySetInnerHTML={{ __html: html }}
+        />
+      </div>
     </Layout>
   )
 }
 
 export const pageQuery = graphql`
-  query blogsQuery {
-    allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
-      filter: { fileAbsolutePath: { regex: "/blog/.*md$/" } }
-    ) {
-      totalCount
-      edges {
-        node {
-          id
-          frontmatter {
-            path
-            title
-            date(formatString: "DD-MMM-YYYY")
-          }
-        }
+  query($path: String!) {
+    markdownRemark(frontmatter: { path: { eq: $path } }) {
+      html
+      frontmatter {
+        date(formatString: "MMMM DD, YYYY")
+        path
+        title
       }
     }
   }
