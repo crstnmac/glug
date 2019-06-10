@@ -24,7 +24,7 @@ const Links = styled(Link)({
 const Logo = styled(Heading)({
   marginRight: "20px",
   fontFamily: "Montserrat",
-  fontWeight: "bold",
+  fontWeight: "800px",
   display: "flex",
   flexDirection: "row",
   justifyContent: "flex-start",
@@ -50,7 +50,7 @@ const Header = ({ siteTitle }) => (
   <Flex p={4} width={1 / 2} fontSize={[3, 4, 5]} justifyContent="flex-start">
   
     <Logo>
-      <Links to="/">Glug Infinite</Links>
+      <Links to="/">glug-infinite.</Links>
     </Logo>
     
     </Flex>
