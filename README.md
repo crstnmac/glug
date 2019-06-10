@@ -1,7 +1,7 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://gluginfinite.github.io">
-    <img alt="glug-infinite." src="./src/images/glug-logo.png" width="60" />
+    <img alt="glug-infinite." src="./src/images/glug-icon.png" width="60" />
   </a>
 </p>
 <h1 align="center">
