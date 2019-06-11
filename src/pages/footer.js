@@ -81,7 +81,7 @@ const Footer = ({ siteTitle }) => (
 		</Column>
 		<Column>
 			<Text justifyContent="center" textAlign = "center" fontWeight="500"
-    fontSize={[2,4,5]}
+    fontSize="1.5"
     lineHeight=" 1em"
     margin="20px 0 10px" >
 				<strong>Glug Infinite</strong>
