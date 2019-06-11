@@ -8,6 +8,12 @@
   Glug Infinite
 </h1>
 
+## FOSS ([Free & Open-Source Software](https://en.wikipedia.org/wiki/Free_and_open-source_software))
+
+Free and open-source software's are software's that can be classified as both Free software and Open-source software. That is, anyone is freely licensed to use, copy, study, and change the software in any way, and the source code is openly shared so that people are encouraged to voluntarily improve the design of the software. This is in contrast to proprietary software, where the software is under restrictive copyright licensing and the source code is usually hidden from the users.
+
+[![Imgur](https://i.imgur.com/V3ZmF9r.jpg)](http://www.youtube.com/watch?v=MtNcxMuphLc "FOSS")
+
 
 ## 🎓 Learning Gatsby
 
