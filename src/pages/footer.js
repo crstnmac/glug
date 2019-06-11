@@ -14,7 +14,7 @@ display: -ms-flexbox;
 display: flex;
 -ms-flex-wrap: wrap;
 	flex-wrap: wrap;
-	color: #7a49ff;
+	
 
 `
 
@@ -42,7 +42,7 @@ const Column = styled.div`
 	  -webkit-box-flex: 1;
 	  -ms-flex: 1 0 290px;
 		  flex: 1 0 290px;
-		
+		  color: #7a49ff;
   
   -webkit-box-sizing: border-box;
 		  box-sizing: border-box;
