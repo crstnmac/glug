@@ -10,7 +10,7 @@ const NavBar = styled.div`
   position: -webkit-fixed;
   width: 100%;
   z-index: 200;
-  height: 80px;
+  height: 100px;
   background-color: rgb(27,30,70);
   box-shadow: 0 5px 30px rgba(127, 0, 255, 0.15);
 `
@@ -61,6 +61,7 @@ const Logo = styled(Heading)({
   alignItems: "center",
   filter: "drop-shadow(-0px 0px 15px rgba(53, 42, 87, 0.3))",
   zIndex:"1",
+  fontSize:"1.3em"
 })
 
 const MenuItems = styled(Text)({

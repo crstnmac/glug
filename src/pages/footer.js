@@ -9,6 +9,32 @@ const Foot = styled(Box)({
 	background: "rgb(27,30,70)",
 })
 
+const Lnks = styled.span`
+color:white;
+  position: relative;
+  z-index: 1;
+
+ &::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: -0.25em;
+  right: -0.25em;
+  background-color: #fc2f70;
+  transform-origin: bottom center;
+  transform: scaleY(0);
+  transition: all 0.1s ease-in-out;
+}
+
+ &:hover::before {
+   
+  transform: scaleY(1);
+  background-color: #fc2f70;
+}
+`
+
 const Container = styled.div`
 display: -webkit-box;
 display: -ms-flexbox;
@@ -78,11 +104,11 @@ const Footer = ({ siteTitle }) => (
 		<Column >
 	
  <Box padding="30px 0" >
-		<Links  href="https://github.com/cristonkrizz/glug">GitHub</Links>
+		<Links  href="https://github.com/cristonkrizz/glug"> <Lnks>GitHub</Lnks></Links>
 
-			<Links href="https://discuss.fsmk.org/">Disqus</Links>
+			<Links href="https://discuss.fsmk.org/"><Lnks>Disqus</Lnks></Links>
 			<Links href="https://gist.github.com/cristonkrizz/8c7a493530ca799feb83487a5bd234f9">
-				Community Guidelines
+				<Lnks>Community Guidelines</Lnks>
 			</Links>
 			</Box>	
 		</Column>
