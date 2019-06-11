@@ -34,7 +34,7 @@
     "rebass": "3.1.1",
     "sass": "1.20.3",
     "sharp": "0.22.1",
-    "styled-components": "4.2.1"
+    "styled-components": "4.3.1"
   },
   "devDependencies": {
     "gh-pages": "2.0.1",
