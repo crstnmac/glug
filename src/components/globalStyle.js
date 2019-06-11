@@ -7,7 +7,7 @@ const GlobalStyle = createGlobalStyle`
     	  -webkit-font-smoothing: smooth;
     	  font-smoothing:smooth
         margin: 0;
-        
+        // background-color:#ffc9b3;
          
        
     }

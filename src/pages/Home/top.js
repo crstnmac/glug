@@ -56,7 +56,7 @@ const Top = () => (
 	<Container>
 	
 		<Box width={[1, 1 / 2]} alignSelf="center" p={3}>
-			<Left>
+			<Left >
 				<Pic filename="good_team.png"/>
 			</Left>
 		</Box>

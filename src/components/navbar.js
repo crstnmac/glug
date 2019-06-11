@@ -11,13 +11,43 @@ const NavBar = styled.div`
   width: 100%;
   z-index: 200;
   height: 80px;
-  background-color: rgb(255,255,255);
+  background-color: rgb(27,30,70);
   box-shadow: 0 5px 30px rgba(127, 0, 255, 0.15);
 `
+
+const Lnks = styled.span`
+color:white;
+  position: relative;
+  z-index: 1;
+
+ &::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  
+  bottom: 0;
+  left: -0.25em;
+  right: -0.25em;
+  background-color: #fc2f70;
+  transform-origin: bottom center;
+  transform: scaleY(0.1);
+  transition: all 0.1s ease-in-out;
+}
+
+ &:hover::before {
+   
+  transform: scaleY(1);
+  background-color: #fc2f70;
+}
+`
+
 
 const Links = styled(Link)({
   color: "#7a49ff",
   textDecoration: "none",
+  paddingLeft:"6px",
+  paddingRight:"6px",
 })
 
 
@@ -46,6 +76,8 @@ const MenuItems = styled(Text)({
 
 const Header = ({ siteTitle }) => (
   
+
+
   <NavBar>
   <Flex p={4} width={1 / 2} fontSize={[3, 4, 5]} justifyContent="flex-start">
   
@@ -57,11 +89,13 @@ const Header = ({ siteTitle }) => (
 
     <Flex p={4} width={1 / 2} fontSize={[2,3,4]} justifyContent="flex-end">
       <MenuItems>
-        <Links to="/team">Team</Links>
+        <Links activeStyle={{ backgroundColor:"#fc2f70", color:"white", }}
+    partiallyActive={true} to="/team"> <Lnks>Team</Lnks> </Links>
       </MenuItems>
 
       <MenuItems>
-        <Links to="/blog">Blog</Links>
+        <Links activeStyle={{ backgroundColor:"#fc2f70", color:"white", }}
+    partiallyActive={true} to="/blog"><Lnks>Blog</Lnks></Links>
       </MenuItems>
     </Flex>
   </NavBar>

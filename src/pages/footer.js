@@ -6,6 +6,7 @@ const Foot = styled(Box)({
 	fontFamily: "Arvo, serif",
 	width:"100%",
 	flexWrap: "wrap",
+	background: "rgb(27,30,70)",
 })
 
 const Container = styled.div`
@@ -43,7 +44,7 @@ const Column = styled.div`
 	  -ms-flex: 1 0 290px;
 		  flex: 1 0 290px;
 		  color: #7a49ff;
-  
+		  padding="70px 0";
   -webkit-box-sizing: border-box;
 		  box-sizing: border-box;
   line-height: 1.5em;`
@@ -68,32 +69,39 @@ const Footer = ({ siteTitle }) => (
 			<Text justifyContent="center" textAlign = "center" fontWeight="500"
 	fontSize= "3em"
 	
-    lineHeight=" 1.3em"
-    margin="20px 0 10px" > <strong> Libre Not Gratis</strong></Text>
+	padding="40px 0"
+	lineHeight="1.2em"
+	 > <strong> Libre Not </strong>
+	 <br/> 
+	 <strong> Gratis </strong>  </Text>
 		</Column>
-		<Column>
-		<Links href="https://github.com/cristonkrizz/glug">GitHub</Links>
+		<Column >
+	
+ <Box padding="30px 0" >
+		<Links  href="https://github.com/cristonkrizz/glug">GitHub</Links>
 
 			<Links href="https://discuss.fsmk.org/">Disqus</Links>
 			<Links href="https://gist.github.com/cristonkrizz/8c7a493530ca799feb83487a5bd234f9">
 				Community Guidelines
 			</Links>
+			</Box>	
 		</Column>
-		<Column>
-			<Text justifyContent="center" textAlign = "center" fontWeight="500"
-    fontSize="1.5"
-    lineHeight=" 1em"
-    margin="20px 0 10px" >
-				<strong>Glug Infinite</strong>
-				<br />
-				Vivekananda College of Engineering and Technology,Puttur-574203
-				<br />
-				<br />
+		<Column  >
+			<Box 
+	fontSize="1.6em"
+	padding="40px 0" 
+    margin="20px" >
+				<Text justifyContent="center" textAlign = "center" fontWeight="500" ><strong>Glug Infinite</strong></Text>
+			
+				<Text 	fontSize="0.8em"
+ justifyContent="center" textAlign = "center" fontWeight="200">Vivekananda College of Engineering and Technology,Puttur-574203
+				</Text>
 				
-			</Text>
+				
+			</Box>
 		</Column>
-		<Copyright >
-			<p> Glug Infinite © {new Date().getFullYear()} Made with ❤️ & 🔨 by<Links href="https://github.com/cristonkrizz">Cris</Links></p>
+		<Copyright color="white"   >
+			<p > Glug Infinite © {new Date().getFullYear()} Made with <span>❤️</span> & <span>🔨</span> by<Links href="https://github.com/cristonkrizz">Cris</Links></p>
 
 		</Copyright>
 		</Container>
