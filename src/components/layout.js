@@ -10,7 +10,7 @@ import Xray from "react-x-ray"
 export default function Layout({ children }) {
   return (
     <React.StrictMode>
-   <Xray>
+   
       <ThemeProvider theme={theme}>
         
         <Box >
@@ -25,7 +25,7 @@ export default function Layout({ children }) {
         
         
       </ThemeProvider>
-   </Xray>
+ 
     </React.StrictMode>
   )
 }

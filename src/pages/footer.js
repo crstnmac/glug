@@ -14,14 +14,21 @@ display: -ms-flexbox;
 display: flex;
 -ms-flex-wrap: wrap;
 	flex-wrap: wrap;
+	color: #7a49ff;
+
 `
 
 const Links = styled.a`
+	display:flex;
 	color: #7a49ff;
 	text-decoration: none;
-	padding: 5px;
+	font-weight: 600;
+	font-size: 1.5em;
+	line-height:1.1em;
+	padding: 10px;
 	text-align: center;
 	transition: all 1s;
+	justify-content:center;
 	&:hover{
 		  text-shadow: 0 8px 14px rgba(33,33,33,.1);
 		  color: #7a49ff;
@@ -30,18 +37,19 @@ const Links = styled.a`
 
 `
 
-const Column = styled(Box)({
-	display: "flex",
-	flexBasis: "33.33%",
-	flexDirection: "column",
-	alignContent: "middle",
-	flexFlow:"column",
-	padding: "10px",
-	color: "#866bde",
-	fontWeight: "700",
-	fontFamily: "Montserrat, san-serif",
-	flexWrap:"wrap",
-})
+const Column = styled.div`
+	 
+	  -webkit-box-flex: 1;
+	  -ms-flex: 1 0 290px;
+		  flex: 1 0 290px;
+		
+  
+  -webkit-box-sizing: border-box;
+		  box-sizing: border-box;
+  line-height: 1.5em;`
+
+
+
 
 const Copyright = styled(Box)({
 	display: "block",
@@ -57,21 +65,25 @@ const Footer = ({ siteTitle }) => (
 	<Foot>
 		<Container>
 		<Column>
-			<Links href="https://github.com/cristonkrizz/glug">GitHub</Links>
-
-			<Links href="https://discuss.fsmk.org/">Disqus</Links>
+			<Text justifyContent="center" textAlign = "center" fontWeight="500"
+	fontSize= "3em"
+	
+    lineHeight=" 1.3em"
+    margin="20px 0 10px" > <strong> Libre Not Gratis</strong></Text>
 		</Column>
 		<Column>
+		<Links href="https://github.com/cristonkrizz/glug">GitHub</Links>
+
+			<Links href="https://discuss.fsmk.org/">Disqus</Links>
 			<Links href="https://gist.github.com/cristonkrizz/8c7a493530ca799feb83487a5bd234f9">
 				Community Guidelines
 			</Links>
-
-			<Links href="https://gist.github.com/cristonkrizz/8c7a493530ca799feb83487a5bd234f9">
-				Code of Conduct 
-			</Links>
 		</Column>
 		<Column>
-			<Text justifyContent="center" textAlign = "center" >
+			<Text justifyContent="center" textAlign = "center" fontWeight="500"
+    fontSize={[2,4,5]}
+    lineHeight=" 1em"
+    margin="20px 0 10px" >
 				<strong>Glug Infinite</strong>
 				<br />
 				Vivekananda College of Engineering and Technology,Puttur-574203
