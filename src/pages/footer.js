@@ -4,15 +4,17 @@ import styled from "styled-components"
 
 const Foot = styled(Box)({
 	fontFamily: "Arvo, serif",
-	display: "flex",
-	flexDirection: "row",
-	maxWidth:"1280px",
-	margin: "0 auto",
-	height: "auto",
 	width:"100%",
 	flexWrap: "wrap",
-	justifyContent: "space-around",
 })
+
+const Container = styled.div`
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+`
 
 const Links = styled.a`
 	color: #7a49ff;
@@ -30,8 +32,7 @@ const Links = styled.a`
 
 const Column = styled(Box)({
 	display: "flex",
-	
-	flexBasis: "50%",
+	flexBasis: "33.33%",
 	flexDirection: "column",
 	alignContent: "middle",
 	flexFlow:"column",
@@ -54,6 +55,7 @@ const Copyright = styled(Box)({
 
 const Footer = ({ siteTitle }) => (
 	<Foot>
+		<Container>
 		<Column>
 			<Links href="https://github.com/cristonkrizz/glug">GitHub</Links>
 
@@ -82,6 +84,7 @@ const Footer = ({ siteTitle }) => (
 			<p> Glug Infinite © {new Date().getFullYear()} Made with ❤️ & 🔨 by<Links href="https://github.com/cristonkrizz">Cris</Links></p>
 
 		</Copyright>
+		</Container>
 	</Foot>
 )
 
