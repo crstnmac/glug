@@ -32,7 +32,7 @@
     "react-helmet": "5.2.1",
     "react-x-ray": "1.0.0-4",
     "rebass": "3.1.1",
-    "sass": "1.20.3",
+    "sass": "1.21.0",
     "sharp": "0.22.1",
     "styled-components": "4.2.1"
   },
