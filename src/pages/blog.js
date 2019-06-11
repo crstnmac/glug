@@ -84,14 +84,18 @@ export default function Index({ data }) {
         .filter(post => post.node.frontmatter.title.length > 0)
         .map(({ node: post }) => {
           return (
-            <Link href={post.frontmatter.path}  key={post.id} textDecoration = 'none' >
+            <Link 
+            href={post.frontmatter.path} 
+             key={post.id} textDecoration = 'none' 
+
+             >
             <Box >
               <BlogCard> 
               <BlogDetails  p={2} >       
-              <Text fontSize ={[2]} my={2} fontWeight = 'bolder'>
+              <Text fontSize ={[2]} my={2} fontWeight = 'bolder' color="black">
                 {post.frontmatter.title}
               </Text>
-              <Text fontSize ={[2]}>{post.frontmatter.date}</Text>
+              <Text fontSize ={[2]} color="black">{post.frontmatter.date}</Text>
               <p>{post.excerpt}</p>
             </BlogDetails>
             </BlogCard>

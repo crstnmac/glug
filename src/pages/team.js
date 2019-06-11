@@ -3,6 +3,7 @@ import Layout from "../components/layout"
 import Card from "../components/memberCard"
 import styled from "styled-components"
 import {Box} from "rebass"
+import SEO from "../components/seo"
 
 function getMembers(data) {
   let members = []
@@ -62,6 +63,7 @@ const Heading = styled(Box)({
 
 const Team = ({data}) => (
 	<Layout>
+	<SEO title="Team" />
 	<OutContainer>
 	<Box width={[1]}>
 	<Heading>Team</Heading>

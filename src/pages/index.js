@@ -8,14 +8,10 @@ import Bottom from "./Home/bottom"
 
 const IndexPage = () => (
 	<Layout>
-	
-
 		<SEO title="Home" />
-
 		<Top />
 		<Middle />
 		<Bottom />
-
 	</Layout>
 )
 

@@ -64,7 +64,6 @@ const Link = styled.a`
   color:"inherited";
   text-decoration: none;
   text-align: center;
-
   -webkit-background-clip:"text";
 
 `

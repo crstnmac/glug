@@ -957,6 +957,20 @@
     react-lifecycles-compat "^3.0.4"
     warning "^3.0.0"
 
+"@rebass/grid@^6.0.0":
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/@rebass/grid/-/grid-6.0.0.tgz#79ad5ae7951bba41a62db5caf1ee2006a201b3b1"
+  integrity sha512-2pbkfObgbfbPUL+spk5JaYt+L4zXAayBLfdDuqnDUxBcBRe2SMqDBTOkEcq1tQvsuhmtfkZ9rB51FyjBkO92vw==
+  dependencies:
+    styled-system "^4.0.6"
+
+"@rebass/space@^2.0.0-0":
+  version "2.0.0-0"
+  resolved "https://registry.yarnpkg.com/@rebass/space/-/space-2.0.0-0.tgz#e7b66f30e4e268e2bb05d836c6226a3038c9e56e"
+  integrity sha512-vs29YfyKaVA44WWC2UP/29WgWE8nw6DOrHtcndoThDqG1YOPlIypAED7Rcl85JIaOY0Yyg8itcPfx8GBvnvNzw==
+  dependencies:
+    styled-system ">=1.0.0 || >=2.0.0"
+
 "@sindresorhus/is@^0.7.0":
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.7.0.tgz#9a06f4f137ee84d7df0460c1fdb1135ffa6c50fd"
@@ -966,6 +980,90 @@
   version "1.5.6-b"
   resolved "https://registry.yarnpkg.com/@stefanprobst/lokijs/-/lokijs-1.5.6-b.tgz#6a36a86dbe132e702e6b15ffd3ce4139aebfe942"
   integrity sha512-MNodHp46og+Sdde/LCxTLrxcD5Dimu21R/Fer2raXMG1XtHSV2+vZnkIV87OPAxuf2NiDj1W5hN7Q2MYUfQQ8w==
+
+"@styled-system/background@^5.0.5":
+  version "5.0.5"
+  resolved "https://registry.yarnpkg.com/@styled-system/background/-/background-5.0.5.tgz#2c5a1dfd251be802f3f27a7c1797e64fcaaa87df"
+  integrity sha512-CNPbx0nH9YUzaG4Ot/iRC88kCnr60Bt0D7J5LKxEfhfZT8uLfvwyvJvFDMIq1kgWRzPEC/PsFcr/s9chCnUHOA==
+  dependencies:
+    "@styled-system/core" "^5.0.5"
+
+"@styled-system/border@^5.0.5":
+  version "5.0.5"
+  resolved "https://registry.yarnpkg.com/@styled-system/border/-/border-5.0.5.tgz#484765202df84cf67a42812f46523244795bc519"
+  integrity sha512-fCGFUJuqywF75Q1z1UJdHsNWV0MYBjYbuve0u7u/F1VlyQwlz0xur3Pa2qOGxTWZzkFVKc9QRLRapyBXDea4jw==
+  dependencies:
+    "@styled-system/core" "^5.0.5"
+
+"@styled-system/color@^5.0.5":
+  version "5.0.5"
+  resolved "https://registry.yarnpkg.com/@styled-system/color/-/color-5.0.5.tgz#5fe267ea6b93ecb0ec942c4a1995c9ed64ac2f55"
+  integrity sha512-vpEBhbOEargvz5iNqg/Y/UGuhvK0wF3rVGdcEtvl6aIchzMuh72HzRpBZ04o7EnSJT1kqU9TAyF8RfhUG3p3Jg==
+  dependencies:
+    "@styled-system/core" "^5.0.5"
+
+"@styled-system/core@^5.0.5":
+  version "5.0.5"
+  resolved "https://registry.yarnpkg.com/@styled-system/core/-/core-5.0.5.tgz#ac3d769f8fc2ae54f7cfada6d22c8c26d195cc03"
+  integrity sha512-FeP2Swis9anzW8fpU4wmBYqHBoPeYp7htcq0JAIi0+4LT3CkQNl3rFGa7IW9VZDnXPYC6Elvh/vdCJVPUyke/Q==
+  dependencies:
+    object-assign "^4.1.1"
+
+"@styled-system/flexbox@^5.0.5":
+  version "5.0.5"
+  resolved "https://registry.yarnpkg.com/@styled-system/flexbox/-/flexbox-5.0.5.tgz#2a4a30c76eb6d4f9252ee640a2df5e229c60433b"
+  integrity sha512-3TTs4GD71SzW22WPnb0DNqgAZfa0EixvlNjdReexLtMZPunk3AIBkURNQ9WuWLgDhwzolVrinKtQaER/4v2f7Q==
+  dependencies:
+    "@styled-system/core" "^5.0.5"
+
+"@styled-system/grid@^5.0.5":
+  version "5.0.5"
+  resolved "https://registry.yarnpkg.com/@styled-system/grid/-/grid-5.0.5.tgz#fbcb770785c2994970225bf9440e957b13f61712"
+  integrity sha512-UtDf4UovXEJp8shJfoTVf6zqW/2ynxAuBXV2PESEytH1m5+9MQfiYVIHjNJbebFNnes20AmAtfuYuk82xrqquA==
+  dependencies:
+    "@styled-system/core" "^5.0.5"
+
+"@styled-system/layout@^5.0.5":
+  version "5.0.5"
+  resolved "https://registry.yarnpkg.com/@styled-system/layout/-/layout-5.0.5.tgz#129a28b984aa4c81a9f152fb3f4a9ec4d7ad6a36"
+  integrity sha512-wXut8J4Nu/jz+SNVHQgbtFn/VkmNau9ahQerxrNtZ8MDfSpVTq8FwmlEq1fpSZQl4PFlFWHS8BBvDi29DsXRvw==
+  dependencies:
+    "@styled-system/core" "^5.0.5"
+
+"@styled-system/position@^5.0.5":
+  version "5.0.5"
+  resolved "https://registry.yarnpkg.com/@styled-system/position/-/position-5.0.5.tgz#bc0756079d436d11bb90f276755eafcb7add8891"
+  integrity sha512-xXrqqif8ESUKzvbBrvLxoEnMnySv6XWPL3eHb15/lZoiBnDoHy3DVqqlYvGrCdfVm9CRZhiwRTjA7FDsN+DFsg==
+  dependencies:
+    "@styled-system/core" "^5.0.5"
+
+"@styled-system/shadow@^5.0.5":
+  version "5.0.5"
+  resolved "https://registry.yarnpkg.com/@styled-system/shadow/-/shadow-5.0.5.tgz#f785e314e3816258c9c18f194e4cae2da1629e0f"
+  integrity sha512-fezKQie5hVM83LfW0droALj6qjXYTv99tLCFy84XN9p9zLvY/X1IpokUOvIzPBvvoOpXPVotbPqvU2mnl6UQCQ==
+  dependencies:
+    "@styled-system/core" "^5.0.5"
+
+"@styled-system/space@^5.0.6":
+  version "5.0.6"
+  resolved "https://registry.yarnpkg.com/@styled-system/space/-/space-5.0.6.tgz#f7145637eb98d082d8d1d2b836df60860f15dfc1"
+  integrity sha512-LrZ3QVwIBgoOl3gz7Sg0XEt91EAP6BmT4DR5NXOf6qpQAeVR1QYqvyfAevp/+XV7D6dfZgfANeycU+QQVuJi6Q==
+  dependencies:
+    "@styled-system/core" "^5.0.5"
+
+"@styled-system/typography@^5.0.5":
+  version "5.0.5"
+  resolved "https://registry.yarnpkg.com/@styled-system/typography/-/typography-5.0.5.tgz#9f4fcf6c12d4a98150110335f3bd97072d53f29b"
+  integrity sha512-iWcVHNur6ExcvT63ux8iJrBsCws4Ux4k6HsmDhsE62+S92w8xynDGTG4Hl9zCEbVluOt6w9NaqR5amB84Ur7zA==
+  dependencies:
+    "@styled-system/core" "^5.0.5"
+
+"@styled-system/variant@^5.0.5":
+  version "5.0.5"
+  resolved "https://registry.yarnpkg.com/@styled-system/variant/-/variant-5.0.5.tgz#11ba85324f6ce679b1036bcfb617cc2ed324e443"
+  integrity sha512-BLQdOgLsFoFHfE8/IVrkdTkCQHfyegZNWJI5X4417dJsO8Gxo5nCsOJbCqRTXPA4fpvodqRT/vZsYxjcvy/ToQ==
+  dependencies:
+    "@styled-system/core" "^5.0.5"
 
 "@types/configstore@^2.1.1":
   version "2.1.1"
@@ -11235,7 +11333,26 @@ styled-system@1.1.7:
   dependencies:
     prop-types "^15.6.0"
 
-styled-system@^4.0.8:
+"styled-system@>=1.0.0 || >=2.0.0":
+  version "5.0.6"
+  resolved "https://registry.yarnpkg.com/styled-system/-/styled-system-5.0.6.tgz#4bb27ba59be4a92e44e78d92eb950a65973bfec3"
+  integrity sha512-rru9Pw04Bv1fOVRGuodu4jv02tlY6pKqawfRCWDvuwXISbq6eMA+1y0ldOfxZPoQUkug+DwEL9oJ4zYCGMXXSQ==
+  dependencies:
+    "@styled-system/background" "^5.0.5"
+    "@styled-system/border" "^5.0.5"
+    "@styled-system/color" "^5.0.5"
+    "@styled-system/core" "^5.0.5"
+    "@styled-system/flexbox" "^5.0.5"
+    "@styled-system/grid" "^5.0.5"
+    "@styled-system/layout" "^5.0.5"
+    "@styled-system/position" "^5.0.5"
+    "@styled-system/shadow" "^5.0.5"
+    "@styled-system/space" "^5.0.6"
+    "@styled-system/typography" "^5.0.5"
+    "@styled-system/variant" "^5.0.5"
+    object-assign "^4.1.1"
+
+styled-system@^4.0.6, styled-system@^4.0.8:
   version "4.2.4"
   resolved "https://registry.yarnpkg.com/styled-system/-/styled-system-4.2.4.tgz#8909f91396c30b92295b4eddec5f7b89f8c8d767"
   integrity sha512-44X7n09gDvwx7yjquEXsjiNALK0dxGgAJdpO5cb/PdL+D4mhSLKWig4/EhH4vHJLbwu/kumURHyvKxygaBfg0A==
