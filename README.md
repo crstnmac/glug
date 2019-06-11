@@ -20,6 +20,10 @@ Contributions to this project shall be done using Pull Requests(PR) only!, so th
 
 ## Newbies head over Here 👉<a href="https://viz38.github.io/First-Pull-Request/" target="_blank">CLICK!!</a>
 
+## ❗ Code of Conduct
+
+Glug-Infinite is dedicated to building a welcoming, diverse, safe community. We expect everyone participating in this community to abide by our [**Code of Conduct**](https://gist.github.com/cristonkrizz/8c7a493530ca799feb83487a5bd234f9). Please read it. Please follow it. In this community, we work hard to build each other up and create amazing things together. 💪💜
+
 
 ## 🎓 Learning Gatsby
 
