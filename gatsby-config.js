@@ -35,8 +35,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Glug-Infinte`,
-        short_name: `Glug-Infinte`,
+        name: `Glug-Infinite`,
+        short_name: `Glug-Infinite`,
         start_url: `/`,
         background_color: `#1B1E46`,
         theme_color: `#1B1E46`,
