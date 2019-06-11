@@ -14,6 +14,12 @@ Free and open-source software's are software's that can be classified as both Fr
 
 [![Imgur](https://i.imgur.com/V3ZmF9r.jpg)](http://www.youtube.com/watch?v=MtNcxMuphLc "FOSS")
 
+## Contribution
+
+Contributions to this project shall be done using Pull Requests(PR) only!, so the users must fork and clone this project to their local machines and once the user update the contents of the project send in a PR to this repository which will be verified and merged by the team leads.
+
+## Newbies head over Here 👉<a href="https://viz38.github.io/First-Pull-Request/" target="_blank">CLICK!!</a>
+
 
 ## 🎓 Learning Gatsby
 
