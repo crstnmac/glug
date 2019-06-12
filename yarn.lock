@@ -11407,7 +11407,7 @@ styled-system@^4.0.6, styled-system@^4.0.8:
     "@babel/runtime" "^7.4.2"
     prop-types "^15.7.2"
 
-styled-theming@^2.2.0:
+styled-theming@2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/styled-theming/-/styled-theming-2.2.0.tgz#3084e43d40eaab4bc11ebafd3de04e3622fee37e"
   integrity sha1-MITkPUDqq0vBHrr9PeBONiL+434=
