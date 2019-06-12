@@ -1,30 +1,26 @@
 import React from "react"
-import { ThemeProvider } from "styled-components"
 import theme from "../theme"
 import Navbar from "./navbar"
 import { Box } from "rebass"
 import Footer from "../pages/footer"
-import GlobalStyle from "./globalStyle"
+import ThemeContext from "../context/ThemeContext"
+import Global from "./globalStyle"
 
 export default function Layout({ children }) {
   return (
-    <React.StrictMode>
-   
-      <ThemeProvider theme={theme}>
-        
-        <Box >
-        
-                    <Navbar />
-          <GlobalStyle />
+    <ThemeContext.Consumer>
+      {theme => (
+        <div className={theme.dark ? "dark" : "light"}>
+          <Global />
+          <Box>
+            <Navbar />
 
-          <Box paddingTop = '64px'>{children}</Box>
+            <Box paddingTop="64px">{children}</Box>
 
-         <Footer /> 
-        </Box>
-        
-        
-      </ThemeProvider>
-      
-    </React.StrictMode>
+            <Footer />
+          </Box>
+        </div>
+      )}
+    </ThemeContext.Consumer>
   )
 }

@@ -1,5 +1,5 @@
-import { theme } from "rebass"
 import "./fonts/font.css"
+import theme from "styled-theming"
 
 const blue = "#07c"
 const lightgray = "#f6f6ff"
@@ -26,5 +26,3 @@ export default {
 		large: "0 0 24px rgba(0, 0, 0, .125)",
 	},
 }
-
-

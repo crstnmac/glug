@@ -30,10 +30,10 @@ const Right = styled(Box)({
 })
 const Heading = styled(Box)({
 	fontFamily: "Montserrat",
-	marginBottom:"20px",
-    fontWeight: "800",
-    fontSize :"50px",
-  	filter: `drop-shadow(-0px 0px 15px rgba(53, 42, 87, 0.3))`,
+	marginBottom: "20px",
+	fontWeight: "800",
+	fontSize: "50px",
+	filter: `drop-shadow(-0px 0px 15px rgba(53, 42, 87, 0.3))`,
 })
 
 const Pic = styled(Image)({})
@@ -43,7 +43,11 @@ const Middle = () => (
 		<Box width={[1, 1 / 2]} alignSelf="center" p={3}>
 			<Heading>Purpose</Heading>
 			<Right>
-				The purpose of a GLUG is to equip students with FOSS and make them understand how FOSS is developed and why is it done so. While doing that - how one can contribute back to FOSS.It is a gathering of like minded people, where people speak about Freedom Software Philosophy and create awareness about the ‘usage’ of Freedom Software.
+				The purpose of a GLUG is to equip students with FOSS and make them
+				understand how FOSS is developed and why is it done so. While doing that
+				- how one can contribute back to FOSS.It is a gathering of like minded
+				people, where people speak about Freedom Software Philosophy and create
+				awareness about the ‘usage’ of Freedom Software.
 			</Right>
 		</Box>
 		<Box width={[1, 1 / 2]} alignSelf="center" p={3}>

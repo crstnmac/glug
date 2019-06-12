@@ -14,7 +14,7 @@ const StyledButton = styled.button`
   cursor:pointer;
   font-size: 15px;
   text-decoration: none;
-  background: -webkit-linear-gradient(top right ,#7a49ff, #5878f3 );	
+  background: -webkit-linear-gradient(top right ,#7a49ff, #5878f3 );  
   -webkit-font-smoothing: smooth;
   fontStyle :'bold';
   border-radius: 30px;
@@ -35,7 +35,7 @@ const StyledButton = styled.button`
   right: -5px;
   bottom: -5px;
   z-index:-1;
-  background: -webkit-linear-gradient(top right ,#7a49ff, #5878f3 );	
+  background: -webkit-linear-gradient(top right ,#7a49ff, #5878f3 );  
   border-radius: 40px;
   filter: blur(20px);
   opacity: 0;
@@ -51,13 +51,8 @@ const StyledButton = styled.button`
 
 `
 
-
-const Button = ({  children, }) => {
-	return (
-		<StyledButton>
-			{children}
-		</StyledButton>
-	)
+const Button = ({ children }) => {
+  return <StyledButton>{children}</StyledButton>
 }
 
 export default Button

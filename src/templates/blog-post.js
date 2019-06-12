@@ -1,30 +1,22 @@
-import React from 'react'
-import Layout from '../components/layout'
-import { graphql } from 'gatsby'
+import React from "react"
+import Layout from "../components/layout"
+import { graphql } from "gatsby"
 import styled from "styled-components"
-import {Box,} from "rebass"
-import {Helmet} from "react-helmet"
+import { Box } from "rebass"
+import { Helmet } from "react-helmet"
 
 const OutContainer = styled(Box)({
   fontFamily: "Arvo, serif",
   display: "flex",
   flexDirection: "row",
   maxWidth: "1280px",
-  paddingTop:"60px",
+  paddingTop: "60px",
   margin: "0 auto",
   height: "auto",
   flexWrap: "wrap",
-  flexFlow:"column",
+  flexFlow: "column",
   justifyContent: "space-around",
-
-
 })
-
-
-
-
-
-
 
 // import '../css/blog-post.css'; // make it pretty!
 
@@ -34,15 +26,15 @@ export default function Template({
   const { markdownRemark: post } = data // data.markdownRemark holds our post data
   return (
     <Layout>
-    <OutContainer>
-      <Helmet title={`Your Blog Name - ${post.frontmatter.title}`} />
-      <div className="blog-post">
-        <h1>{post.frontmatter.title}</h1>
-        <div
-          className="blog-post-content"
-          dangerouslySetInnerHTML={{ __html: post.html }}
-        />
-      </div>
+      <OutContainer>
+        <Helmet title={`Your Blog Name - ${post.frontmatter.title}`} />
+        <div className="blog-post">
+          <h1>{post.frontmatter.title}</h1>
+          <div
+            className="blog-post-content"
+            dangerouslySetInnerHTML={{ __html: post.html }}
+          />
+        </div>
       </OutContainer>
     </Layout>
   )

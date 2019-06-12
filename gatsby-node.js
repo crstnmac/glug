@@ -8,7 +8,7 @@ exports.createPages = ({ actions, graphql }) => {
   return graphql(`
     {
       allMarkdownRemark(
-      	filter: { fileAbsolutePath: { regex: "/blog/.*md$/" } }
+        filter: { fileAbsolutePath: { regex: "/blog/.*md$/" } }
         sort: { order: DESC, fields: [frontmatter___date] }
         limit: 1000
       ) {
@@ -31,8 +31,7 @@ exports.createPages = ({ actions, graphql }) => {
       createPage({
         path: node.frontmatter.path,
         component: blogPostTemplate,
-        context: { 
-        }, // additional data can be passed via context
+        context: {}, // additional data can be passed via context
       })
     })
     // highlight-end
