@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import styled from "styled-components"
 import { Box } from "rebass"
 import { graphql } from "gatsby"
+import SEO from "../components/seo"
 
 function getBlogs(data, readTime) {
   let blogs = []
@@ -55,6 +56,7 @@ const Heading = styled(Box)({
 
 const BlogsPage = ({ data, readTime }) => (
   <Layout>
+    <SEO title="Blog" />
     <OutContainer>
       <Box width={[1]}>
         <Heading>Blog</Heading>

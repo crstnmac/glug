@@ -9,7 +9,7 @@ const Container = styled(Box)({
   fontFamily: "Arvo, serif",
   display: "flex",
   flexDirection: "row",
-  maxWidth: "1280px",
+  maxWidth: "100",
   margin: "0 auto",
   marginTop: "64px",
   height: "auto",

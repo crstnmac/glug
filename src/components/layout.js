@@ -16,7 +16,6 @@ export default function Layout({ children }) {
           <Navbar />
           <Box paddingTop="64px">
             <Box>{children}</Box>
-
             <Footer />
           </Box>
         </div>
