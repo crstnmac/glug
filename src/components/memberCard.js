@@ -6,20 +6,22 @@ import { Box, Text } from "rebass"
 const Memcard = styled(Card)({
   width: "80%",
   height: "auto",
-  margin: "10px 0px",
+  margin: "10px auto",
   padding: "15px",
   display: "flex",
   flexDirection: "row",
   alignItems: "center",
   backgroundColor: "#F0F0F0",
+  justifyContent: "center",
 })
 
 const Image = styled.img`
-  width: 80px;
-  height: 80px;
-  min-width: 80px;
+  width: 100px;
+  min-width: 100px;
   border-radius: 50%;
   object-fit: cover;
+  padding: 10px;
+  alignself: middle;
 `
 
 const MemDetails = styled(Box)({

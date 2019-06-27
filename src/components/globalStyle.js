@@ -11,8 +11,8 @@ const GlobalStyle = createGlobalStyle`
 
 
 .dark {
-  background-color: rgb(27,30,70);
   transition: all 0.6s ease;
+  background-color: rgb(27,30,70);
   color:#7a49ff;
 }
 

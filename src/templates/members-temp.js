@@ -75,6 +75,8 @@ export default function Template({
       <div className="blog-post">
         <h1>{frontmatter.title}</h1>
         <h2>{frontmatter.date}</h2>
+        <Img fluid={post.frontmatter.cover.childImageSharp.fluid} />
+
         <div
           className="blog-post-content"
           dangerouslySetInnerHTML={{ __html: html }}
@@ -92,6 +94,16 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         path
         title
+        cover {
+          childImageSharp {
+            resize(width: 1500, height: 1500) {
+              src
+            }
+            fluid(maxWidth: 786) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }

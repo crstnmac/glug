@@ -1,9 +1,25 @@
 import React from "react"
-import Card from "../components/card"
+import BlogCard from "../components/blogCard"
 import Layout from "../components/layout"
-import { graphql } from "gatsby"
 import styled from "styled-components"
-import { Box, Text } from "rebass"
+import { Box } from "rebass"
+import { graphql } from "gatsby"
+
+function getBlogs(data, readTime) {
+  let blogs = []
+  let blogList = data.allMarkdownRemark.edges
+
+  blogList.forEach(element => {
+    blogs.push(
+      <BlogCard
+        data={element.node.frontmatter}
+        readTime={element.node.fields.readingTime.text}
+      />
+    )
+  })
+
+  return blogs
+}
 
 const OutContainer = styled(Box)({
   fontFamily: "Arvo, serif",
@@ -18,24 +34,14 @@ const OutContainer = styled(Box)({
   justifyContent: "space-around",
 })
 
-const BlogCard = styled(Card)({
-  height: "100px",
-  padding: "15px",
-  display: "flex",
-  flexDirection: "column",
-  alignItems: "center",
-  backgroundColor: "#F0F0F0",
-})
-
 const Container = styled(Box)({
   width: "100%",
   fontFamily: "Arvo, serif",
   display: "flex",
-  display: "-webkit-box",
-  display: "-moz-box",
-  display: "-ms-flexbox",
-  display: "-webkit-flex",
+  alignItems: "center",
+  justifyContent: "center",
   flexWrap: "wrap",
+  padding: "10px",
 })
 
 const Heading = styled(Box)({
@@ -47,67 +53,20 @@ const Heading = styled(Box)({
   filter: `drop-shadow(-0px 0px 15px rgba(53, 42, 87, 0.3))`,
 })
 
-const BlogDetails = styled(Box)({
-  fontFamily: "Arvo",
-  display: "flex",
-  flexDirection: "column",
-  alignItems: "flex-start",
-})
+const BlogsPage = ({ data, readTime }) => (
+  <Layout>
+    <OutContainer>
+      <Box width={[1]}>
+        <Heading>Blog</Heading>
+      </Box>
+      <Container>{getBlogs(data, readTime)}</Container>
+    </OutContainer>
+  </Layout>
+)
 
-const Link = styled.a`
-  color: "inherited";
-  text-decoration: none;
-  text-align: center;
+export default BlogsPage
 
-  -webkit-background-clip: "text";
-`
-
-export default function Index({ data }) {
-  const { edges: posts } = data.allMarkdownRemark
-  return (
-    <Layout>
-      <OutContainer>
-        <Box width={[1]}>
-          <Heading>Blog</Heading>
-        </Box>
-        <Container>
-          {posts
-            .filter(post => post.node.frontmatter.title.length > 0)
-            .map(({ node: post }) => {
-              return (
-                <Link
-                  href={post.frontmatter.path}
-                  key={post.id}
-                  textDecoration="none"
-                >
-                  <Box>
-                    <BlogCard>
-                      <BlogDetails p={2}>
-                        <Text
-                          fontSize={[2]}
-                          my={2}
-                          fontWeight="bolder"
-                          color="black"
-                        >
-                          {post.frontmatter.title}
-                        </Text>
-                        <Text fontSize={[2]} color="black">
-                          {post.frontmatter.date}
-                        </Text>
-                        <p>{post.excerpt}</p>
-                      </BlogDetails>
-                    </BlogCard>
-                  </Box>
-                </Link>
-              )
-            })}
-        </Container>
-      </OutContainer>
-    </Layout>
-  )
-}
-
-export const pageQuery = graphql`
+export const blogsQuery = graphql`
   query blogsQuery {
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
@@ -119,8 +78,23 @@ export const pageQuery = graphql`
           id
           frontmatter {
             path
+            cover {
+              publicURL
+              childImageSharp {
+                fluid(maxWidth: 1000) {
+                  srcSet
+                  ...GatsbyImageSharpFluid_tracedSVG
+                }
+              }
+            }
             title
             date(formatString: "DD-MMM-YYYY")
+          }
+
+          fields {
+            readingTime {
+              text
+            }
           }
         }
       }

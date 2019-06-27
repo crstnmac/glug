@@ -6,25 +6,25 @@ import "./toogleButton.scss"
 import ThemeContext from "../context/ThemeContext"
 
 const toggleButton = () => {
-	return (
-		<ThemeContext.Consumer>
-			{theme => (
-				<div class="toggle">
-					<span>☀️</span>
-					<input
-						type="checkbox"
-						id="toggle-switch"
-						onClick={theme.toggleDark}
-					/>
-					<label for="toggle-switch">
-						<span class="screen-reader-text">Toggle Color Scheme</span>
-					</label>
+  return (
+    <ThemeContext.Consumer>
+      {theme => (
+        <div className="toggle">
+          <span>☀️</span>
+          <input
+            type="checkbox"
+            id="toggle-switch"
+            onClick={theme.toggleDark}
+          />
+          <label htmlFor="toggle-switch">
+            <span className="screen-reader-text">Toggle Color Scheme</span>
+          </label>
 
-					<span>🌙</span>
-				</div>
-			)}
-		</ThemeContext.Consumer>
-	)
+          <span>🌙</span>
+        </div>
+      )}
+    </ThemeContext.Consumer>
+  )
 }
 
 export default toggleButton
