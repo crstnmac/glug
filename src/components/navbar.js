@@ -1,8 +1,7 @@
 import { Link } from "gatsby"
 import React from "react"
-import { Box, Flex, Text, Heading } from "rebass"
+import { Flex, Text, Heading } from "rebass"
 import styled from "styled-components"
-import Toogle from "./toogleButton"
 import ThemeContext from "../context/ThemeContext"
 
 const NavBar = styled.div`
@@ -11,13 +10,14 @@ const NavBar = styled.div`
   position: -webkit-fixed;
   width: 100%;
   z-index: 200;
-  height: 100px;
-  background-color: rgb(27, 30, 70);
+  height: 80px;
+  background-color: white;
   box-shadow: 0 5px 30px rgba(127, 0, 255, 0.15);
+  margin-top: -64px;
 `
 
 const Lnks = styled.span`
-  color: white;
+  color: #2d3748;
   position: relative;
   z-index: 1;
 
@@ -26,11 +26,10 @@ const Lnks = styled.span`
     position: absolute;
     z-index: -1;
     top: 0;
-
     bottom: 0;
     left: -0.25em;
     right: -0.25em;
-    background-color: #fc2f70;
+    background-color: #7a49ff;
     transform-origin: bottom center;
     transform: scaleY(0.1);
     transition: all 0.1s ease-in-out;
@@ -38,7 +37,7 @@ const Lnks = styled.span`
 
   &:hover::before {
     transform: scaleY(1);
-    background-color: #fc2f70;
+    background-color: #7a49ff;
   }
 `
 
@@ -63,7 +62,7 @@ const Logo = styled(Heading)({
 })
 
 const MenuItems = styled(Text)({
-  marginRight: "10px",
+  marginRight: "30px",
   fontFamily: "Arvo",
   fontWeight: "bold",
   display: "flex",
@@ -79,7 +78,7 @@ const Header = ({ siteTitle }) => (
       <NavBar>
         <Flex
           p={4}
-          width={1 / 2}
+          width={3 / 4}
           fontSize={[3, 4, 5]}
           justifyContent="flex-start"
         >
@@ -90,13 +89,13 @@ const Header = ({ siteTitle }) => (
 
         <Flex
           p={4}
-          width={1 / 2}
-          fontSize={[2, 3, 4]}
+          width={1 / 4}
+          fontSize={[3, 4, 4]}
           justifyContent="flex-end"
         >
           <MenuItems>
             <Links
-              activeStyle={{ backgroundColor: "#fc2f70", color: "white" }}
+              activeStyle={{ backgroundColor: "#7a49ff", color: "white" }}
               partiallyActive={true}
               to="/team"
             >
@@ -107,15 +106,12 @@ const Header = ({ siteTitle }) => (
 
           <MenuItems>
             <Links
-              activeStyle={{ backgroundColor: "#fc2f70", color: "white" }}
+              activeStyle={{ backgroundColor: "#7a49ff", color: "white" }}
               partiallyActive={true}
               to="/blog"
             >
               <Lnks>Blog</Lnks>
             </Links>
-          </MenuItems>
-          <MenuItems>
-            <Toogle />
           </MenuItems>
         </Flex>
       </NavBar>

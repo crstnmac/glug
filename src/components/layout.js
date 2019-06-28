@@ -1,10 +1,10 @@
 import React from "react"
-import theme from "../theme"
 import Navbar from "./navbar"
 import { Box } from "rebass"
 import Footer from "../pages/footer"
 import ThemeContext from "../context/ThemeContext"
 import Global from "./globalStyle"
+import "../fonts/font.css"
 
 export default function Layout({ children }) {
   return (
@@ -12,13 +12,9 @@ export default function Layout({ children }) {
       {theme => (
         <div className={theme.dark ? "dark" : "light"}>
           <Global />
-          <Box>
-            <Navbar />
-
-            <Box paddingTop="64px">{children}</Box>
-
-            <Footer />
-          </Box>
+          <Navbar />
+          <Box marginTop="64px">{children}</Box>
+          <Footer />
         </div>
       )}
     </ThemeContext.Consumer>

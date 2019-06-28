@@ -1,10 +1,10 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://gluginfinite.github.io">
-    <img alt="glug-infinite." src="./src/images/glug-icon.png" width="100" />
+    <img alt="glug-infinite." src="./src/images/glug-icon.png" width="100" style="border-radius: 30px"  />
   </a>
 </p>
-<h1 align="center">
+<h1 align="center" style="margin-top: 10px">
   Glug Infinite
 </h1>
 
@@ -24,6 +24,9 @@ Contributions to this project shall be done using Pull Requests(PR) only!, so th
 
 Glug-Infinite is dedicated to building a welcoming, diverse, safe community. We expect everyone participating in this community to abide by our [**Code of Conduct**](https://gist.github.com/cristonkrizz/8c7a493530ca799feb83487a5bd234f9). Please read it. Please follow it. In this community, we work hard to build each other up and create amazing things together. 💪💜
 
+### 🚀 Website performance
+
+![Lighthouse report](./src/images/lighthouse.png)
 
 ## 🎓 Learning Gatsby
 
@@ -32,7 +35,5 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 - **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
 
 - **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
-
-
 
 <!-- AUTO-GENERATED-CONTENT:END -->

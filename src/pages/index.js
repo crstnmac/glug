@@ -4,14 +4,22 @@ import SEO from "../components/seo"
 import Top from "./Home/top"
 import Middle from "./Home/middle"
 import Bottom from "./Home/bottom"
+import { Box } from "rebass"
 
 const IndexPage = () => (
-	<Layout>
-		<SEO title="Home" />
-		<Top />
-		<Middle />
-		<Bottom />
-	</Layout>
+  <Layout>
+    <SEO title="Home" />
+    <Box
+      height="100%"
+      width={["100%", "80%", "80%"]}
+      marginLeft="auto"
+      marginRight="auto"
+    >
+      <Top />
+      <Middle />
+      <Bottom />
+    </Box>
+  </Layout>
 )
 
 export default IndexPage
