@@ -17,6 +17,7 @@ const OutContainer = styled(Box)({
   flexDirection: "column",
   justifyContent: "space-around",
   alignContent: "center",
+  color: "#2d3748",
 })
 
 const BlogContent = styled(Box)({

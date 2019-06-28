@@ -11,7 +11,7 @@ const Foot = styled(Box)({
 })
 
 const Lnks = styled.span`
-  color: black;
+  color: #2d3748;
   position: relative;
   z-index: 1;
 
@@ -135,7 +135,7 @@ const Footer = ({ siteTitle }) => (
           </Text>
         </Box>
       </Column>
-      <Copyright color="black" boxShadow="0 5px 30px rgba(127, 0, 255, 0.15)">
+      <Copyright color="#2d3748" boxShadow="0 5px 30px rgba(127, 0, 255, 0.15)">
         <p>
           {" "}
           Glug Infinite © {new Date().getFullYear()} Made with{" "}

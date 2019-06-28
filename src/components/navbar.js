@@ -17,7 +17,7 @@ const NavBar = styled.div`
 `
 
 const Lnks = styled.span`
-  color: black;
+  color: #2d3748;
   position: relative;
   z-index: 1;
 
@@ -29,7 +29,7 @@ const Lnks = styled.span`
     bottom: 0;
     left: -0.25em;
     right: -0.25em;
-    background-color: #fc2f70;
+    background-color: #7a49ff;
     transform-origin: bottom center;
     transform: scaleY(0.1);
     transition: all 0.1s ease-in-out;
@@ -37,7 +37,7 @@ const Lnks = styled.span`
 
   &:hover::before {
     transform: scaleY(1);
-    background-color: #fc2f70;
+    background-color: #7a49ff;
   }
 `
 
@@ -95,7 +95,7 @@ const Header = ({ siteTitle }) => (
         >
           <MenuItems>
             <Links
-              activeStyle={{ backgroundColor: "#fc2f70", color: "white" }}
+              activeStyle={{ backgroundColor: "#7a49ff", color: "white" }}
               partiallyActive={true}
               to="/team"
             >
@@ -106,7 +106,7 @@ const Header = ({ siteTitle }) => (
 
           <MenuItems>
             <Links
-              activeStyle={{ backgroundColor: "#fc2f70", color: "white" }}
+              activeStyle={{ backgroundColor: "#7a49ff", color: "white" }}
               partiallyActive={true}
               to="/blog"
             >

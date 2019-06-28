@@ -34,6 +34,7 @@ const OutContainer = styled(Box)({
   flexWrap: "wrap",
   flexFlow: "column",
   justifyContent: "space-around",
+  color: "#2d3748",
 })
 
 const Container = styled(Box)({

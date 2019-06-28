@@ -3,7 +3,7 @@ import theme from "styled-theming"
 
 const blue = "#07c"
 const lightgray = "#f6f6ff"
-const black = "#000e1a"
+const black = "#2d3748"
 const white = "#fff"
 
 export default {
