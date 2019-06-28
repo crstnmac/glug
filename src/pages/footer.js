@@ -23,7 +23,7 @@ const Lnks = styled.span`
     bottom: 0;
     left: -0.25em;
     right: -0.25em;
-    background-color: #fc2f70;
+    background-color: #7a49ff;
     transform-origin: bottom center;
     transform: scaleY(0);
     transition: all 0.1s ease-in-out;
@@ -31,7 +31,7 @@ const Lnks = styled.span`
 
   &:hover::before {
     transform: scaleY(1);
-    background-color: #fc2f70;
+    background-color: #7a49ff;
   }
 `
 
