@@ -9,7 +9,12 @@ import { Box } from "rebass"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <Box height="100%" width="80%" marginLeft="auto" marginRight="auto">
+    <Box
+      height="100%"
+      width={["100%", "80%", "80%"]}
+      marginLeft="auto"
+      marginRight="auto"
+    >
       <Top />
       <Middle />
       <Bottom />

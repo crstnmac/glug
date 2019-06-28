@@ -1,6 +1,5 @@
 import React from "react"
-import { Flex, Text, Heading } from "rebass"
-import styled from "styled-components"
+
 import "./toogleButton.scss"
 
 import ThemeContext from "../context/ThemeContext"
@@ -10,17 +9,19 @@ const toggleButton = () => {
     <ThemeContext.Consumer>
       {theme => (
         <div className="toggle">
-          <span>☀️</span>
+          <span role="img" aria-label="day">
+            ☀️
+          </span>
           <input
             type="checkbox"
             id="toggle-switch"
             onClick={theme.toggleDark}
           />
-          <label htmlFor="toggle-switch">
-            <span className="screen-reader-text">Toggle Color Scheme</span>
-          </label>
+          <label htmlFor="toggle-switch"></label>
 
-          <span>🌙</span>
+          <span role="img" aria-label="night">
+            🌙
+          </span>
         </div>
       )}
     </ThemeContext.Consumer>

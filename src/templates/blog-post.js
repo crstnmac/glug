@@ -14,7 +14,6 @@ const OutContainer = styled(Box)({
   height: "auto",
   flexWrap: "wrap",
   flexFlow: "column",
-  display: "flex",
   flexDirection: "column",
   justifyContent: "space-around",
   alignContent: "center",

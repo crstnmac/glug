@@ -11,7 +11,6 @@ const Container = styled(Box)({
   flexDirection: "row",
   maxWidth: "100",
   margin: "0 auto",
-  marginTop: "64px",
   height: "auto",
   width: "1 1/2",
   flexWrap: "wrap",
@@ -58,12 +57,17 @@ const Top = () => (
       <Container>
         <Box width={[1, 1 / 2]} alignSelf="center" p={3}>
           <Left>
-            <Pic filename="good_team.png" />
+            <Pic filename="creative-team.png" />
           </Left>
         </Box>
 
         <Box width={[1, 1 / 2]} alignSelf="center" p={3}>
-          <Heading>GLUG //♾️// </Heading>
+          <Heading>
+            GLUG
+            <span role="img" aria-label="infinity">
+              {"//♾️//"}
+            </span>
+          </Heading>
           <Right>
             GLUGs(GNU/Linux user groups) are the means of spreading the idea of
             free software, hardware, and philosphy in campuses. GLUGs serve as a

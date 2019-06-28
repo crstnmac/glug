@@ -5,29 +5,29 @@ import styled from "styled-components"
 import { Box } from "rebass"
 import SEO from "../components/seo"
 
-function getMembers(data) {
-  let members = []
-
-  let memberList = data.allMarkdownRemark.edges
-
-  memberList.map(element => {
-    return members.push(
-      <Card
-        username={element.node.frontmatter.username}
-        full_name={element.node.frontmatter.name}
-        designation={element.node.frontmatter.designation}
-      />
-    )
-  })
-
-  return members
-}
+// function getMembers(data) {
+//   let members = []
+//
+//   let memberList = data.allMarkdownRemark.edges
+//
+//   memberList.map(element => {
+//     return members.push(
+//       <Card
+//         username={element.node.frontmatter.username}
+//         full_name={element.node.frontmatter.name}
+//         designation={element.node.frontmatter.designation}
+//       />
+//     )
+//   })
+//
+//   return members
+// }
 
 const OutContainer = styled(Box)({
   fontFamily: "Arvo, serif",
   display: "flex",
   flexDirection: "row",
-  maxWidth: "80%",
+  maxWidth: "100%",
   paddingTop: "60px",
   margin: "0 auto",
   height: "auto",
