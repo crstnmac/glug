@@ -35,7 +35,7 @@ export default function Layout({ children }) {
         <div className={theme.dark ? "dark" : "light"}>
           <Global />
           <Navbar />
-          <Box marginTop="40px">{children}</Box>
+          <Box marginTop="40px" minHeight="100%" marginBottom = "60px" >{children}</Box>
           <Footer />
         </div>
       )}
