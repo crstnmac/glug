@@ -5,6 +5,7 @@ import styled from "styled-components"
 const Foot = styled(Box)({
   fontFamily: "Arvo, serif",
   width: "100%",
+  height: "100%",
   flexWrap: "wrap",
   background: "white",
   boxShadow: "0 5px 30px rgba(127, 0, 255, 0.15)",
