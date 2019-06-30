@@ -10,6 +10,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <Box
+      paddingTop="20px"
       height="100%"
       width={["100%", "80%", "80%"]}
       marginLeft="auto"

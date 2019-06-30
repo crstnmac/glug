@@ -9,6 +9,7 @@ const Foot = styled(Box)({
   flexWrap: "wrap",
   background: "white",
   boxShadow: "0 5px 30px rgba(127, 0, 255, 0.15)",
+  marginBottom:"-150px",
 })
 
 const Lnks = styled.span`
@@ -135,7 +136,8 @@ const Footer = ({ siteTitle }) => (
             </strong>
           </Text>
         </Box>
-        <Copyright color="#2d3748" boxShadow="0 5px 30px rgba(127, 0, 255, 0.15)">
+      </Column>
+      <Copyright color="#2d3748" boxShadow="0 5px 30px rgba(127, 0, 255, 0.15)">
         <p>
           {" "}
           Glug Infinite © {new Date().getFullYear()} Made with{" "}
@@ -150,7 +152,6 @@ const Footer = ({ siteTitle }) => (
           <Links href="https://github.com/cristonkrizz">Cris</Links>
         </p>
       </Copyright>
-      </Column>
     </Container>
   </Foot>
 )

@@ -8,8 +8,8 @@ const white = "#fff"
 
 export default {
   ...theme,
-  breakpoints: ["40em", "52em", "64em"],
-  fontSizes: [12, 14, 16, 20, 24, 32, 48, 64],
+  breakpoints: ["576px", "768px", "992px", "1200px", "1800px"],
+  defaultWidths: [1, 1, 1, 7 / 8, 3 / 4, 1 / 2],
   colors: {
     blue,
     lightgray,

@@ -5,7 +5,6 @@ module.exports = {
     author: `@github:crstnmac`,
   },
   plugins: [
-    `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-catch-links`,
     {
@@ -46,6 +45,12 @@ module.exports = {
     `gatsby-plugin-emotion`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        ssr:`true`,
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

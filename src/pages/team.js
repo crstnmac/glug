@@ -30,6 +30,7 @@ const OutContainer = styled(Box)({
   maxWidth: "100%",
   paddingTop: "60px",
   margin: "0 auto",
+  marginBottom:"60px",
   height: "auto",
   flexWrap: "wrap",
   flexFlow: "column",
