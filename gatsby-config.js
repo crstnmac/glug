@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Glug Infinite`,
     description: `FOSS Club`,
-    author: `@github:cristonkrizz`,
+    author: `@github:crstnmac`,
   },
   plugins: [
     `gatsby-plugin-styled-components`,
