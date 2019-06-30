@@ -135,8 +135,7 @@ const Footer = ({ siteTitle }) => (
             </strong>
           </Text>
         </Box>
-      </Column>
-      <Copyright color="#2d3748" boxShadow="0 5px 30px rgba(127, 0, 255, 0.15)">
+        <Copyright color="#2d3748" boxShadow="0 5px 30px rgba(127, 0, 255, 0.15)">
         <p>
           {" "}
           Glug Infinite © {new Date().getFullYear()} Made with{" "}
@@ -151,6 +150,7 @@ const Footer = ({ siteTitle }) => (
           <Links href="https://github.com/cristonkrizz">Cris</Links>
         </p>
       </Copyright>
+      </Column>
     </Container>
   </Foot>
 )
