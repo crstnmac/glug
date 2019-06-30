@@ -20,6 +20,7 @@ const Left = styled(Box)({
   maxWidth: "auto",
   justifyContent: "space-around",
   alignContent: "center",
+
 })
 
 const Right = styled(Box)({
@@ -27,6 +28,9 @@ const Right = styled(Box)({
   width: "100%",
   justifyContent: "space-around",
   alignContent: "center",
+  border: "6px dashed #7a49ff",
+  borderRadius: "10px",
+  padding:"10px",
 })
 const Heading = styled(Box)({
   fontFamily: "Montserrat",

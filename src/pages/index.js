@@ -14,6 +14,7 @@ const IndexPage = () => (
       width={["100%", "80%", "80%"]}
       marginLeft="auto"
       marginRight="auto"
+      paddingTop = "60px"
     >
       <Top />
       <Middle />

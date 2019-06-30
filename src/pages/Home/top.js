@@ -31,6 +31,10 @@ const Right = styled(Box)({
   justifyContent: "space-around",
   alignContent: "center",
   marginBottom: "15px",
+  border: "6px dashed #7a49ff",
+  borderRadius: "10px",
+  padding:"10px",
+
 })
 
 const Heading = styled(Box)({
@@ -39,6 +43,7 @@ const Heading = styled(Box)({
   fontSize: "50px",
   marginBottom: "20px",
   filter: `drop-shadow(-0px 0px 15px rgba(53, 42, 87, 0.3))`,
+
 })
 
 const Link = styled.a`

@@ -8,30 +8,34 @@ const NavBar = styled.div`
   display: flex;
   position: fixed;
   position: -webkit-fixed;
+  top:0;
+  padding:16px;
   width: 100%;
   z-index: 200;
-  height: 80px;
+  height: 60px;
   background-color: white;
   box-shadow: 0 5px 30px rgba(127, 0, 255, 0.15);
-  margin-top: -64px;
+  border-top: 6px solid #7a49ff;
+
+  
 `
 
 const Lnks = styled.span`
   color: #2d3748;
   position: relative;
   z-index: 1;
-
+  padding:6px;
   &::before {
     content: "";
     position: absolute;
     z-index: -1;
     top: 0;
     bottom: 0;
-    left: -0.25em;
-    right: -0.25em;
+    left: 0;
+    right: 0;
     background-color: #7a49ff;
-    transform-origin: bottom center;
-    transform: scaleY(0.1);
+    transform-origin: bottom  center;
+    transform: scaleY(0.15);
     transition: all 0.1s ease-in-out;
   }
 
@@ -44,8 +48,6 @@ const Lnks = styled.span`
 const Links = styled(Link)({
   color: "#7a49ff",
   textDecoration: "none",
-  paddingLeft: "6px",
-  paddingRight: "6px",
 })
 
 const Logo = styled(Heading)({
@@ -72,9 +74,13 @@ const MenuItems = styled(Text)({
   filter: "drop-shadow(-0px 0px 15px rgba(53, 42, 87, 0.3))",
 })
 
+ 
+
 const Header = ({ siteTitle }) => (
   <ThemeContext.Consumer>
-    {theme => (
+    {
+      theme =>
+     (
       <NavBar>
         <Flex
           p={4}
@@ -86,6 +92,8 @@ const Header = ({ siteTitle }) => (
             <Links to="/">glug-infinite.</Links>
           </Logo>
         </Flex>
+
+
 
         <Flex
           p={4}

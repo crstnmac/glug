@@ -28,6 +28,9 @@ const Right = styled(Box)({
   justifyContent: "space-around",
   alignContent: "center",
   marginBottom: "15px",
+  border: "6px dashed #7a49ff",
+  borderRadius: "10px",
+  padding:"10px",
 })
 
 const Heading = styled(Box)({

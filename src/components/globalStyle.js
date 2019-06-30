@@ -3,10 +3,11 @@ import { createGlobalStyle } from "styled-components"
 const GlobalStyle = createGlobalStyle`
 
 
-    html, body,nav{
+    html, body{
     	  -webkit-font-smoothing: smooth;
     	  font-smoothing:smooth;
         margin: 0;
+
         }
 
 
