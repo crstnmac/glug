@@ -48,7 +48,7 @@ export default function Template({
     <Layout>
       <OutContainer>
         <Helmet title={`Your Blog Name - ${post.frontmatter.title}`} />
-        <Wrapper width={["80%", "80%", "50%"]}>
+        <Wrapper width={["80%", "80%", "60%"]}>
           <Text fontSize={[5, 5, 6]} fontWeight="bold" py={3}>
             {post.frontmatter.title}
           </Text>
