@@ -47,7 +47,8 @@ const MenuItems = styled(Text)({
   filter: "drop-shadow(-0px 0px 15px rgba(53, 42, 87, 0.3))",
 })
 
- 
+
+
 
 const Header = ({ siteTitle }) => (
   <ThemeContext.Consumer>
@@ -57,7 +58,7 @@ const Header = ({ siteTitle }) => (
       <NavBar>
         <Flex
           p={4}
-          width={3 / 4}
+          width={["40%"]}
           fontSize={[3, 4, 5]}
           justifyContent="flex-start"
         >
@@ -70,7 +71,7 @@ const Header = ({ siteTitle }) => (
 
         <Flex
           p={4}
-          width={1 / 4}
+          width={"40%"}
           fontSize={[3, 4, 4]}
           justifyContent="flex-end"
         >
@@ -96,6 +97,35 @@ const Header = ({ siteTitle }) => (
           </MenuItems>
         </Flex>
       </NavBar>
+
+
+// <div class="Navbar">
+//    <div class="Navbar__Link Navbar__Link-brand">
+//       Website title
+//     </div>
+//     <div class="Navbar__Link Navbar__Link-toggle">
+//       <i class="fas fa-bars"></i>
+//     </div>
+//   <nav class="Navbar__Items">
+//     <div class="Navbar__Link">
+//       Longer Link
+//     </div>
+//     <div class="Navbar__Link">
+//       Longer Link
+//     </div>
+//     <div class="Navbar__Link">
+//       Link
+//     </div>
+//   </nav>
+//   <nav class="Navbar__Items Navbar__Items--right">
+//     <div class="Navbar__Link">
+//       Link
+//     </div>
+//     <div class="Navbar__Link">
+//       Link
+//     </div>
+//   </nav>
+// </div>
     )}
   </ThemeContext.Consumer>
 )

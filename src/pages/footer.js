@@ -41,6 +41,7 @@ const Container = styled.div`
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  border-bottom: 6px solid #7a49ff;
   filter: drop-shadow(-0px 0px 15px rgba(53, 42, 87, 0.3));
 `
 
@@ -71,6 +72,7 @@ const Column = styled.div`
   -webkit-box-sizing: border-box;
 		  box-sizing: border-box;
   line-height: 1.5em;
+  
 
 `
 
