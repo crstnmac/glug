@@ -33,7 +33,9 @@ const OutContainer = styled(Box)({
   flexWrap: "wrap",
   flexFlow: "column",
   justifyContent: "space-around",
-  color: "#2d3748",
+  border: "6px dashed #7a49ff",
+  borderRadius: "10px",
+  padding: "10px",
 })
 
 const Container = styled(Box)({
@@ -58,12 +60,20 @@ const Heading = styled(Box)({
 const BlogsPage = ({ data, readTime }) => (
   <Layout>
     <SEO title="Blog" />
-    <OutContainer>
-      <Box width={[1]}>
-        <Heading>Blog</Heading>
-      </Box>
-      <Container>{getBlogs(data, readTime)}</Container>
-    </OutContainer>
+    <Box
+      height="100%"
+      width={["100%", "80%", "80%"]}
+      marginLeft="auto"
+      marginRight="auto"
+      paddingTop="60px"
+      color="#2d3748"
+    >
+      <Heading>Blog</Heading>
+
+      <OutContainer>
+        <Container>{getBlogs(data, readTime)}</Container>
+      </OutContainer>
+    </Box>
   </Layout>
 )
 

@@ -8,7 +8,7 @@ const NavBar = styled.div`
   display: flex;
   position: fixed;
   position: -webkit-fixed;
-  top:0;
+  top: 0;
   width: 100%;
   z-index: 200;
   height: 80px;
@@ -16,7 +16,6 @@ const NavBar = styled.div`
   box-shadow: 0 5px 30px rgba(127, 0, 255, 0.15);
   border-top: 6px solid #7a49ff;
 `
-
 
 const Links = styled(Link)({
   color: "#7a49ff",
@@ -47,13 +46,9 @@ const MenuItems = styled(Text)({
   filter: "drop-shadow(-0px 0px 15px rgba(53, 42, 87, 0.3))",
 })
 
- 
-
 const Header = ({ siteTitle }) => (
   <ThemeContext.Consumer>
-    {
-      theme =>
-     (
+    {theme => (
       <NavBar>
         <Flex
           p={4}
@@ -65,8 +60,6 @@ const Header = ({ siteTitle }) => (
             <Links to="/">glug-infinite.</Links>
           </Logo>
         </Flex>
-
-
 
         <Flex
           p={4}
@@ -87,7 +80,7 @@ const Header = ({ siteTitle }) => (
 
           <MenuItems>
             <Links
-              activeStyle={{ backgroundColor: "#7a49ff"}}
+              activeStyle={{ backgroundColor: "#7a49ff" }}
               partiallyActive={true}
               to="/blog"
             >

@@ -23,7 +23,6 @@ const OutContainer = styled(Box)({
 const BlogContent = styled(Box)({
   fontFamily: "Montserrat, sans",
   fontSize: "1.2em",
-
 })
 
 const Wrapper = styled(Box)({
@@ -32,13 +31,6 @@ const Wrapper = styled(Box)({
   flexDirection: "column",
   marginLeft: "auto",
   marginRight: "auto",
-})
-
-const Dotted =styled(Box)({
-  border: "6px dashed #7a49ff",
-  borderRadius: "10px",
-  padding:"10px",
-
 })
 
 const Image = styled(Img)({
@@ -56,9 +48,8 @@ export default function Template({
     <Layout>
       <OutContainer>
         <Helmet title={`Your Blog Name - ${post.frontmatter.title}`} />
-       
+
         <Wrapper width={["80%", "80%", "60%"]}>
-          <Dotted>
           <Text fontSize={[5, 5, 6]} fontWeight="bold" py={3}>
             {post.frontmatter.title}
           </Text>
@@ -70,9 +61,7 @@ export default function Template({
             <Image fluid={post.frontmatter.cover.childImageSharp.fluid} />
           </Wrapper>
           <BlogContent dangerouslySetInnerHTML={{ __html: post.html }} />
-        </Dotted>
         </Wrapper>
-
       </OutContainer>
     </Layout>
   )

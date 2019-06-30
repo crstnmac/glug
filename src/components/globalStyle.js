@@ -2,12 +2,36 @@ import { createGlobalStyle } from "styled-components"
 const GlobalStyle = createGlobalStyle`
 
 
-    html, body{
-    	  -webkit-font-smoothing: smooth;
-    	  font-smoothing:smooth;
-        margin: 0;
 
-        }
+
+*:before,
+*:after {
+ box-sizing: border-box;
+}
+
+html,
+body {
+ height: 100%;
+ position: relative;
+ -webkit-font-smoothing: smooth;
+        font-smoothing:smooth;
+        margin: 0;
+}
+
+.main-container {
+ min-height: 100vh; /* will cover the 100% of viewport */
+ overflow: hidden;
+ display: block;
+ position: relative;
+ padding-bottom: 100px; /* height of your footer */
+}
+
+footer {
+ position: absolute;
+ bottom: 0;
+ width: 100%;
+}
+
 .darkmode--activated p, .darkmode--activated li {
   color: #000;
 }
@@ -96,13 +120,6 @@ const GlobalStyle = createGlobalStyle`
    } 
 }
 
-
-
 `
-
-
-
-
-
 
 export default GlobalStyle

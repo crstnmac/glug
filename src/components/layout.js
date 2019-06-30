@@ -8,8 +8,6 @@ import "../fonts/font.css"
 
 // import Darkmode from 'darkmode-js';
 
-
-
 // var options = {
 //   bottom: '565px', // default: '32px'
 //   right: '6px', // default: '32px'
@@ -23,7 +21,6 @@ import "../fonts/font.css"
 //   label: '🌓' // default: ''
 // }
 
-
 // const darkmode = new Darkmode(options);
 
 // darkmode.showWidget();
@@ -33,10 +30,19 @@ export default function Layout({ children }) {
     <ThemeContext.Consumer>
       {theme => (
         <div className={theme.dark ? "dark" : "light"}>
-          <Global />
-          <Navbar />
-          <Box marginTop="40px" minHeight="100%" marginBottom = "60px" >{children}</Box>
-          <Footer />
+          <Box margin="0">
+            <Global />
+            <Navbar />
+            <Box
+              marginTop="40px"
+              minHeight="100%"
+              marginBottom="60px"
+              className="main-container"
+            >
+              {children}
+            </Box>
+            <Footer className="footer"></Footer>
+          </Box>
         </div>
       )}
     </ThemeContext.Consumer>
