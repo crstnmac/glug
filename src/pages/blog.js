@@ -26,7 +26,7 @@ const OutContainer = styled(Box)({
   fontFamily: "Arvo, serif",
   display: "flex",
   flexDirection: "row",
-  maxWidth: "80%",
+  maxWidth: "100%",
   paddingTop: "60px",
   margin: "0 auto",
   height: "auto",
