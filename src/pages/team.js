@@ -66,7 +66,7 @@ const Team = ({ data }) => (
       <Container>
         <Box width={[1, 1, 1 / 3]}>
           <Card
-            username="cristonkrizz"
+            username="crstnmac"
             full_name="Criston Mascarenhas"
             designation="FSMK Regional Coordinator"
           />

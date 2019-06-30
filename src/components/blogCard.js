@@ -7,8 +7,7 @@ import { Box, Text } from "rebass"
 
 const BlogCard = styled(Card)({
   width: "80%",
-  height: "100%",
-  margin: "10px 0px",
+  height: "80%",
   display: "flex",
   flexDirection: "row",
   alignItems: "center",
