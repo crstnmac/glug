@@ -99,7 +99,7 @@ const Header = ({ siteTitle }) => (
       </NavBar>
 
 
-// <div class="Navbar">
+{// <div class="Navbar">
 //    <div class="Navbar__Link Navbar__Link-brand">
 //       Website title
 //     </div>
@@ -125,7 +125,7 @@ const Header = ({ siteTitle }) => (
 //       Link
 //     </div>
 //   </nav>
-// </div>
+// </div>}
     )}
   </ThemeContext.Consumer>
 )

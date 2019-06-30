@@ -5,7 +5,6 @@ import Footer from "../pages/footer"
 import ThemeContext from "../context/ThemeContext"
 import Global from "./globalStyle"
 import "../fonts/font.css"
-import Xray from 'react-x-ray'
 
 // import Darkmode from 'darkmode-js';
 
@@ -33,14 +32,12 @@ export default function Layout({ children }) {
   return (
     <ThemeContext.Consumer>
       {theme => (
-        <Xray>
         <div className={theme.dark ? "dark" : "light"}>
           <Global />
           <Navbar />
           <Box marginTop="40px">{children}</Box>
           <Footer />
         </div>
-        </Xray>
       )}
     </ThemeContext.Consumer>
   )
