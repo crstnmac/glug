@@ -1,5 +1,4 @@
 import { createGlobalStyle } from "styled-components"
-
 const GlobalStyle = createGlobalStyle`
 
 
@@ -9,19 +8,49 @@ const GlobalStyle = createGlobalStyle`
         margin: 0;
 
         }
-
-
-.dark {
-  transition: all 0.6s ease;
-  background-color: rgb(27,30,70);
-  color:#7a49ff;
+.darkmode--activated p, .darkmode--activated li {
+  color: #000;
 }
 
-.light {
-  transition: all 0.6s ease;
-  background-color: #fefefe;
+.button {
+  isolation: isolate;
 }
+
+.darkmode--activated .logo {
+  mix-blend-mode: difference;
+}
+
+.borderMarker {
+    position: relative;
+    color:rgb(45, 55, 72);
+}
+
+.borderMarker::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 70%;
+    left: -0.1px;
+    right: -0.1px;
+    bottom: 0;
+    transition: top .1s ease-in-out;
+    background-color: rgba(87,120,243,0.5);
+}
+
+.borderMarker:hover::after {
+    top: 0;
+}
+
+.darkmode-layer,.darkmode-toggle {
+  z-index: 500;
+}
+
 
 `
+
+
+
+
+
 
 export default GlobalStyle

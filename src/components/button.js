@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 
 const StyledButton = styled.button`
+
   font-family:Arvo;
   position: absolute;
   width: auto;
@@ -16,7 +17,7 @@ const StyledButton = styled.button`
   background: -webkit-linear-gradient(top right ,#7a49ff, #5878f3 );
   -webkit-font-smoothing: smooth;
   fontStyle :'bold';
-  border-radius: 30px;
+  border-radius: 10px;
   z-index:1;
   outline:none;
 }
@@ -29,13 +30,13 @@ const StyledButton = styled.button`
 &:before{
   content: '';
   position: absolute;
-  top: -5px;
-  left: -5px;
-  right: -5px;
-  bottom: -5px;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 0px;
   z-index:-1;
   background: -webkit-linear-gradient(top right ,#7a49ff, #5878f3 );
-  border-radius: 40px;
+  border-radius: 300px;
   filter: blur(20px);
   opacity: 0;
   transition: all 1s;
@@ -51,7 +52,7 @@ const StyledButton = styled.button`
 `
 
 const Button = ({ children }) => {
-  return <StyledButton>{children}</StyledButton>
+  return <StyledButton className="darkmode-ignore">{children}</StyledButton>
 }
 
 export default Button

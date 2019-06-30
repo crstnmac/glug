@@ -13,6 +13,10 @@ export const onServiceWorkerUpdateReady = () => {
 	}
 }
 
+
+
+
 export const wrapRootElement = ({ element }) => (
 	<ThemeProvider>{element}</ThemeProvider>
 )
+
