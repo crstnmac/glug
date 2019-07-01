@@ -49,7 +49,7 @@ const Container = styled(Box)({
 })
 
 const Heading = styled(Box)({
-  fontFamily: "Arvo",
+  fontFamily: "Montserrat",
   fontWeight: "800",
   fontSize: "50px",
   marginBottom: "20px",
