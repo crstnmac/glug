@@ -13,7 +13,7 @@ function getMembers(data) {
 
   memberList.forEach(element => {
     members.push(
-      <Card
+      <Card 
         username={element.node.frontmatter.username}
         full_name={element.node.frontmatter.name}
         designation={element.node.frontmatter.designation}

@@ -23,7 +23,7 @@ const StyledCard = styled.div`
   ${props => props.primary && primaryCss}
 
 &:hover{
-  box-shadow: 0 8px 16px rgba(50, 50, 93, 0.1), 0 6px 12px rgba(127, 0, 255, 0.3);
+  box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
   background-color: #fff;
 
 }
