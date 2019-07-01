@@ -3,25 +3,26 @@ import Layout from "../components/layout"
 import Card from "../components/memberCard"
 import styled from "styled-components"
 import { Box } from "rebass"
+import { graphql } from 'gatsby'
 import SEO from "../components/seo"
 
-// function getMembers(data) {
-//   let members = []
-//
-//   let memberList = data.allMarkdownRemark.edges
-//
-//   memberList.map(element => {
-//     return members.push(
-//       <Card
-//         username={element.node.frontmatter.username}
-//         full_name={element.node.frontmatter.name}
-//         designation={element.node.frontmatter.designation}
-//       />
-//     )
-//   })
-//
-//   return members
-// }
+function getMembers(data) {
+  let members = []
+
+  let memberList = data.allMarkdownRemark.edges
+
+  memberList.forEach(element => {
+    members.push(
+      <Card
+        username={element.node.frontmatter.username}
+        full_name={element.node.frontmatter.name}
+        designation={element.node.frontmatter.designation}
+      />
+    )
+  })
+
+  return members
+}
 
 const OutContainer = styled(Box)({
   fontFamily: "Varela Round, sans-serif",
@@ -108,6 +109,9 @@ const Team = ({ data }) => (
               designation="FSMK Member"
             />
           </Box>
+          <Box width={[1,1,1/3]}>
+          {getMembers(data)}
+          </Box>
         </Container>
       </OutContainer>
     </Box>
@@ -115,3 +119,24 @@ const Team = ({ data }) => (
 )
 
 export default Team
+
+export const teamQuery = graphql`
+  query membersQuery {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___username], order: ASC }
+      filter: { fileAbsolutePath: { regex: "/members/.*md$/" } }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            username
+            name
+            designation
+          }
+        }
+      }
+    }
+  }
+`
+
+

@@ -87,6 +87,15 @@ const Header = ({ siteTitle }) => (
               <div className="borderMarker">Blog</div>
             </Links>
           </MenuItems>
+          <MenuItems>
+            <Links
+              activeStyle={{ backgroundColor: "#7a49ff" }}
+              partiallyActive={true}
+              to="/events"
+            >
+              <div className="borderMarker">Events</div>
+            </Links>
+          </MenuItems>
         </Flex>
       </NavBar>
     )}

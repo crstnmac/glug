@@ -3,6 +3,19 @@ module.exports = {
     title: `Glug Infinite`,
     description: `FOSS Club`,
     author: `@github:crstnmac`,
+    siteUrl: 'https://gluginfinite.github.io',
+    events: {
+      title: 'Glug-Infinite - Events',
+      siteUrl: 'https://gluginfinite.github.io/events',
+    },
+    team: {
+      title: 'Glug-Infinite - Team',
+      siteUrl: 'https://gluginfinite.github.io/team',
+    },
+    blog: {
+      title: 'Glug-Infinite - Blog',
+      siteUrl: 'https://gluginfinite.github.io/blog',
+    },
   },
   plugins: [
     `gatsby-plugin-styled-components`,
@@ -19,7 +32,21 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `blog`,
-        path: `${__dirname}/src/blog`,
+        path: `${__dirname}/src/data/blog`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `events`,
+        path: `${__dirname}/src/data/events`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `members`,
+        path: `${__dirname}/src/data/members`,
       },
     },
     `gatsby-transformer-remark`,

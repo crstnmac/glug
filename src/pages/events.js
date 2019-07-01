@@ -6,13 +6,12 @@ import { Box } from "rebass"
 import { graphql } from "gatsby"
 import SEO from "../components/seo"
 
-function getBlogs(data, readTime) {
-  let blogs = []
-  
-  let blogList = data.allMarkdownRemark.edges
+function getEvents(data, readTime) {
+  let events = []
+  let eventList = data.allMarkdownRemark.edges
 
-  blogList.forEach(element => {
-    blogs.push(
+  eventList.forEach(element => {
+    events.push(
       <BlogCard
         data={element.node.frontmatter}
         readTime={element.node.fields.readingTime.text}
@@ -20,7 +19,7 @@ function getBlogs(data, readTime) {
     )
   })
 
-  return blogs
+  return events
 }
 
 const OutContainer = styled(Box)({
@@ -58,7 +57,7 @@ const Heading = styled(Box)({
   filter: `drop-shadow(-0px 0px 15px rgba(53, 42, 87, 0.3))`,
 })
 
-const BlogsPage = ({ data, readTime }) => (
+const EventsPage = ({ data, readTime }) => (
   <Layout>
     <SEO title="Blog" />
     <Box
@@ -69,22 +68,22 @@ const BlogsPage = ({ data, readTime }) => (
       paddingTop="60px"
       color="#2d3748"
     >
-      <Heading>Blog</Heading>
+      <Heading>Events</Heading>
 
       <OutContainer>
-        <Container>{getBlogs(data, readTime)}</Container>
+        <Container>{getEvents(data, readTime)}</Container>
       </OutContainer>
     </Box>
   </Layout>
 )
 
-export default BlogsPage
+export default EventsPage
 
-export const blogsQuery = graphql`
-  query blogsQuery {
+export const eventsQuery = graphql`
+  query eventsQuery {
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { fileAbsolutePath: { regex: "/blog/.*md$/" } }
+      filter: { fileAbsolutePath: { regex: "/events/.*md$/" } }
     ) {
       totalCount
       edges {
