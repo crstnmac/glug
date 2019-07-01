@@ -29,7 +29,7 @@ export default function Layout({ children }) {
   return (
     <ThemeContext.Consumer>
       {theme => (
-        <div className={theme.dark ? "dark" : "light"}>
+        <div>
           <Box margin="0">
             <Global />
             <Navbar />

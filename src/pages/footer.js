@@ -64,13 +64,13 @@ const Links = styled.a`
 
 const Column = styled.div`
 
-	  -webkit-box-flex: 1;
-	  -ms-flex: 1 0 290px;
-		  flex: 1 0 290px;
-		  color: #7a49ff;
-		  padding="70px 0";
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 290px;
+      flex: 1 0 290px;
+      color: #7a49ff;
+      padding="70px 0";
   -webkit-box-sizing: border-box;
-		  box-sizing: border-box;
+      box-sizing: border-box;
   line-height: 1.5em;
   
 

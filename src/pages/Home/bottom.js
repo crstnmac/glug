@@ -9,10 +9,10 @@ const Container = styled(Box)({
   flexDirection: "row",
   maxWidth: "100%",
   margin: "0 auto",
-  height: "auto",
+  height: "100%",
   width: "1 1/2",
   flexWrap: "wrap",
-  justifyContent: "space-around",
+  justifyContent: "space-between",
 })
 const Left = styled(Box)({
   display: "flex",

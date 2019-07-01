@@ -5591,6 +5591,14 @@ gatsby-plugin-no-sourcemaps@^2.1.0:
   resolved "https://registry.yarnpkg.com/gatsby-plugin-no-sourcemaps/-/gatsby-plugin-no-sourcemaps-2.1.0.tgz#a152cf412cc0d4d5e56c38c7d9db8d99cfe1dcfd"
   integrity sha512-svVu27lQmPeJaV4igCbLO6aS4ag1Ljsb2VQAVKidBJIqD3QGUdjmDGA3lqkYhUIrKC2s1XJY5BIUJHJfuVqJTg==
 
+gatsby-plugin-nprogress@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-nprogress/-/gatsby-plugin-nprogress-2.1.0.tgz#1609b2db52b4131acbd433cb6335aea67c492a7d"
+  integrity sha512-E9ynVJMuxMGhpNecijxH4nx1SBMj4vR4H824YcLZC8ATao6Iz4jVzSYo6MnwtXUJeTjDDkPnvUhe0+HGGNjWGQ==
+  dependencies:
+    "@babel/runtime" "^7.0.0"
+    nprogress "^0.2.0"
+
 gatsby-plugin-offline@2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-offline/-/gatsby-plugin-offline-2.1.1.tgz#8009b4f61189aa6a8fc9949d1e0020b91bf2a4f7"
@@ -8841,6 +8849,11 @@ npmlog@^4.0.1, npmlog@^4.0.2, npmlog@^4.1.2:
     console-control-strings "~1.1.0"
     gauge "~2.7.3"
     set-blocking "~2.0.0"
+
+nprogress@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/nprogress/-/nprogress-0.2.0.tgz#cb8f34c53213d895723fcbab907e9422adbcafb1"
+  integrity sha1-y480xTIT2JVyP8urkH6UIq28r7E=
 
 nth-check@^1.0.1, nth-check@^1.0.2, nth-check@~1.0.1:
   version "1.0.2"

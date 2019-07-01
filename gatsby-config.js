@@ -58,6 +58,15 @@ module.exports = {
         icon: `src/images/glug-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        // Setting a color is optional.
+        color: `tomato`,
+        // Disable the loading spinner.
+        showSpinner: true,
+      },
+    },
     "gatsby-plugin-offline",
     "gatsby-plugin-no-sourcemaps",
   ],

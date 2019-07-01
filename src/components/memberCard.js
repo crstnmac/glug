@@ -13,6 +13,7 @@ const Memcard = styled(Card)({
   alignItems: "center",
   backgroundColor: "#F0F0F0",
   justifyContent: "center",
+  cursor: "pointer",
 })
 
 const Image = styled.img`
