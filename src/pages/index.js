@@ -16,7 +16,7 @@ const IndexPage = () => (
       marginRight="auto"
       paddingTop="60px"
       color="#2d3748"
-      fontFamily="Arvo, serif"
+      fontFamily="Varela Round, sans-serif"
       display="flex"
       flexDirection="row"
       flexWrap="wrap"

@@ -4,7 +4,7 @@ import styled from "styled-components"
 import { Box } from "rebass"
 
 const Container = styled(Box)({
-  fontFamily: "Arvo, serif",
+  fontFamily: "Varela Round, sans-serif",
   display: "flex",
   flexDirection: "row",
   maxWidth: "100%",
@@ -30,12 +30,12 @@ const Right = styled(Box)({
   marginBottom: "15px",
   border: "6px dashed #7a49ff",
   borderRadius: "10px",
-  padding:"10px",
+  padding: "10px",
 })
 
 const Heading = styled(Box)({
   fontFamily: "Montserrat",
-  fontWeight: "800",
+  fontWeight: "700",
   fontSize: "50px",
   marginBottom: "20px",
   filter: `drop-shadow(-0px 0px 15px rgba(53, 42, 87, 0.3))`,

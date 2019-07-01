@@ -4,7 +4,7 @@ import styled from "styled-components"
 import { Box } from "rebass"
 
 const Container = styled(Box)({
-  fontFamily: "Arvo, serif",
+  fontFamily: "Varela Round, sans-serif",
   display: "flex",
   flexDirection: "row",
   maxWidth: "100%",
@@ -20,7 +20,6 @@ const Left = styled(Box)({
   maxWidth: "auto",
   justifyContent: "space-around",
   alignContent: "center",
-
 })
 
 const Right = styled(Box)({
@@ -30,12 +29,12 @@ const Right = styled(Box)({
   alignContent: "center",
   border: "6px dashed #7a49ff",
   borderRadius: "10px",
-  padding:"10px",
+  padding: "10px",
 })
 const Heading = styled(Box)({
   fontFamily: "Montserrat",
   marginBottom: "20px",
-  fontWeight: "800",
+  fontWeight: "700",
   fontSize: "50px",
   filter: `drop-shadow(-0px 0px 15px rgba(53, 42, 87, 0.3))`,
 })

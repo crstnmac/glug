@@ -23,7 +23,7 @@ function getBlogs(data, readTime) {
 }
 
 const OutContainer = styled(Box)({
-  fontFamily: "Arvo, serif",
+  fontFamily: "Varela Round, sans-serif",
   display: "flex",
   flexDirection: "row",
   maxWidth: "1280px",
@@ -40,7 +40,7 @@ const OutContainer = styled(Box)({
 
 const Container = styled(Box)({
   width: "100%",
-  fontFamily: "Arvo, serif",
+  fontFamily: "Varela Round, sans-serif",
   display: "flex",
   alignItems: "center",
   justifyContent: "center",

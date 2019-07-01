@@ -24,7 +24,7 @@ import SEO from "../components/seo"
 // }
 
 const OutContainer = styled(Box)({
-  fontFamily: "Arvo, serif",
+  fontFamily: "Varela Round, sans-serif",
   display: "flex",
   flexDirection: "row",
   maxWidth: "100%",
@@ -43,7 +43,7 @@ const OutContainer = styled(Box)({
 const Container = styled(Box)({
   alignSelf: "center",
   width: "100%",
-  fontFamily: "Arvo, serif",
+  fontFamily: "Varela Round, sans-serif",
   display: "flex",
   alignItems: "center",
   justifyContent: "center",

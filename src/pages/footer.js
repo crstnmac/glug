@@ -3,7 +3,7 @@ import { Box, Text } from "rebass"
 import styled from "styled-components"
 
 const Foot = styled(Box)({
-  fontFamily: "Arvo, serif",
+  fontFamily: "Varela Round, sans-serif",
   width: "100%",
   flexWrap: "wrap",
   background: "white",

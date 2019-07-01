@@ -37,8 +37,8 @@ const Logo = styled(Heading)({
 
 const MenuItems = styled(Text)({
   marginRight: "30px",
-  fontFamily: "Arvo",
-  fontWeight: "bold",
+  fontFamily: "Montserrat",
+  fontWeight: "600",
   display: "flex",
   flexDirection: "row",
   justifyContent: "flex-end",

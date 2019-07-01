@@ -7,7 +7,7 @@ import { Helmet } from "react-helmet"
 import Img from "gatsby-image"
 
 const OutContainer = styled(Box)({
-  fontFamily: "Arvo, serif",
+  fontFamily: "Varela Round, sans-serif",
   display: "flex",
   paddingTop: "80px",
   margin: "0 auto",
@@ -21,14 +21,17 @@ const OutContainer = styled(Box)({
 })
 
 const BlogContent = styled(Box)({
-  fontFamily: "Montserrat, sans",
+  fontFamily: "Varela Round, sans-serif",
   fontSize: "1.2em",
+  marginLeft: "0px",
+  marginRight: "0px",
 })
 
 const Wrapper = styled(Box)({
   display: "flex",
   flexFlow: "column",
   flexDirection: "column",
+  justifyContent: "center",
   marginLeft: "auto",
   marginRight: "auto",
 })

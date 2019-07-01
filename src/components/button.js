@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 const StyledButton = styled.button`
 
-  font-family:Arvo;
+  font-family:Varela Round;
   position: absolute;
   width: auto;
   height:40px;
