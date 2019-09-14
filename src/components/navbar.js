@@ -53,7 +53,7 @@ const Header = ({ siteTitle }) => (
         <Flex
           p={4}
           width={3 / 4}
-          fontSize={[3, 4, 5]}
+          fontSize={[1, 3, 4]}
           justifyContent="flex-start"
         >
           <Logo>
@@ -87,7 +87,6 @@ const Header = ({ siteTitle }) => (
               <div className="borderMarker">Blog</div>
             </Links>
           </MenuItems>
-       
         </Flex>
       </NavBar>
     )}
