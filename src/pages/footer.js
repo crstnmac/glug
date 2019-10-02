@@ -72,7 +72,7 @@ const Column = styled.div`
   -webkit-box-sizing: border-box;
       box-sizing: border-box;
   line-height: 1.5em;
-  
+
 
 `
 
@@ -105,7 +105,7 @@ const Footer = ({ siteTitle }) => (
       </Column>
       <Column>
         <Box padding="30px 0">
-          <Links href="https://github.com/cristonkrizz/glug">
+          <Links href="https://github.com/crstnmac/glug">
             {" "}
             <Lnks>GitHub</Lnks>
           </Links>
@@ -113,7 +113,7 @@ const Footer = ({ siteTitle }) => (
           <Links href="https://discuss.fsmk.org/">
             <Lnks>Disqus</Lnks>
           </Links>
-          <Links href="https://gist.github.com/cristonkrizz/8c7a493530ca799feb83487a5bd234f9">
+          <Links href="https://gist.github.com/crstnmac/8c7a493530ca799feb83487a5bd234f9">
             <Lnks>Community Guidelines</Lnks>
           </Links>
         </Box>
@@ -149,7 +149,7 @@ const Footer = ({ siteTitle }) => (
             🔨
           </span>{" "}
           by
-          <Links href="https://github.com/cristonkrizz">Cris</Links>
+          <Links href="https://github.com/crstnmac">Cris</Links>
         </p>
       </Copyright>
     </Container>
