@@ -7,7 +7,7 @@
   "dependencies": {
     "@emotion/core": "10.0.10",
     "@emotion/styled": "10.0.12",
-    "@hackclub/design-system": "0.0.1-16",
+    "@hackclub/design-system": "0.0.1-17",
     "@rebass/grid": "6.0.0",
     "@rebass/space": "4.0.5",
     "babel-plugin-styled-components": "1.10.0",
