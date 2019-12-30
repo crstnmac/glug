@@ -44,7 +44,7 @@
     "sharp": "0.22.1",
     "styled-components": "4.3.1",
     "styled-theming": "2.2.0",
-    "webpack": "4.39.3"
+    "webpack": "4.41.5"
   },
   "devDependencies": {
     "gh-pages": "2.0.1",
