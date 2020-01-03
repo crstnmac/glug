@@ -36,11 +36,11 @@ const Wrapper = styled(Box)({
   marginRight: "auto",
 })
 
-const Dotted = styled(Box)({
-  border: "6px dashed #7a49ff",
-  borderRadius: "10px",
-  padding: "20px",
-})
+// const Dotted = styled(Box)({
+//   border: "6px dashed #7a49ff",
+//   borderRadius: "10px",
+//   padding: "20px",
+// })
 
 const Image = styled(Img)({
   display: "flex",
@@ -59,19 +59,17 @@ export default function Template({
         <Helmet title={`Your Blog Name - ${post.frontmatter.title}`} />
 
         <Wrapper width={["80%", "80%", "60%"]}>
-          <Dotted>
-            <Text fontSize={[5, 5, 6]} fontWeight="bold" py={3}>
-              {post.frontmatter.title}
-            </Text>
-            <Box px={3}>
-              <Text fontSize={[2]}>{post.frontmatter.date}</Text>
-              <Text fontSize={[2]}>{post.fields.readingTime.text}</Text>
-            </Box>
-            <Wrapper alignSelf="center" width={[1, 1, "80%"]} p={[3]}>
-              <Image fluid={post.frontmatter.cover.childImageSharp.fluid} />
-            </Wrapper>
-            <BlogContent dangerouslySetInnerHTML={{ __html: post.html }} />
-          </Dotted>
+          <Text fontSize={[5, 5, 6]} fontWeight="bold" py={3}>
+            {post.frontmatter.title}
+          </Text>
+          <Box px={3}>
+            <Text fontSize={[2]}>{post.frontmatter.date}</Text>
+            <Text fontSize={[2]}>{post.fields.readingTime.text}</Text>
+          </Box>
+          <Wrapper alignSelf="center" width={[1, 1, "80%"]} p={[3]}>
+            <Image fluid={post.frontmatter.cover.childImageSharp.fluid} />
+          </Wrapper>
+          <BlogContent dangerouslySetInnerHTML={{ __html: post.html }} />
         </Wrapper>
       </OutContainer>
     </Layout>

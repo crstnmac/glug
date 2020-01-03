@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import Card from "../components/memberCard"
 import styled from "styled-components"
 import { Box } from "rebass"
-import { graphql } from 'gatsby'
+import { graphql } from "gatsby"
 import SEO from "../components/seo"
 
 function getMembers(data) {
@@ -13,11 +13,13 @@ function getMembers(data) {
 
   memberList.forEach(element => {
     members.push(
-      <Card 
-        username={element.node.frontmatter.username}
-        full_name={element.node.frontmatter.name}
-        designation={element.node.frontmatter.designation}
-      />
+      <Box width={[1, 1, 1 / 3]}>
+        <Card
+          username={element.node.frontmatter.username}
+          full_name={element.node.frontmatter.name}
+          designation={element.node.frontmatter.designation}
+        />
+      </Box>
     )
   })
 
@@ -109,9 +111,7 @@ const Team = ({ data }) => (
               designation="FSMK Member"
             />
           </Box>
-          <Box width={[1,1,1/3]}>
           {getMembers(data)}
-          </Box>
         </Container>
       </OutContainer>
     </Box>
@@ -138,5 +138,3 @@ export const teamQuery = graphql`
     }
   }
 `
-
-
