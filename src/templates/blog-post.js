@@ -36,12 +36,6 @@ const Wrapper = styled(Box)({
   marginRight: "auto",
 })
 
-// const Dotted = styled(Box)({
-//   border: "6px dashed #7a49ff",
-//   borderRadius: "10px",
-//   padding: "20px",
-// })
-
 const Image = styled(Img)({
   display: "flex",
   width: "100%",
@@ -58,7 +52,7 @@ export default function Template({
       <OutContainer>
         <Helmet title={`Your Blog Name - ${post.frontmatter.title}`} />
 
-        <Wrapper width={["80%", "80%", "60%"]}>
+        <Wrapper width={["80%", "80%", "60%"]} mx="auto">
           <Text fontSize={[5, 5, 6]} fontWeight="bold" py={3}>
             {post.frontmatter.title}
           </Text>

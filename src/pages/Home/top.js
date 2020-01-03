@@ -79,7 +79,7 @@ const Top = () => (
             kernel, web technologies like drupal and mastering the latest python
             module, at the same time raising questions of self reliance.
           </Right>
-          <Box width={[1 / 2]} pb={4} alignSelf="left">
+          <Box width={[1 / 2]} mt={2} alignSelf="left">
             <Link href="https://fsmk.org/about">
               <Button>Know More </Button>
             </Link>

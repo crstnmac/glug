@@ -2,7 +2,6 @@ import React from "react"
 import styled from "styled-components"
 
 const StyledButton = styled.button`
-
   font-family:Varela Round;
   position: absolute;
   width: auto;

@@ -5,14 +5,17 @@ import styled from "styled-components"
 import Card from "./card"
 import { Box, Text } from "rebass"
 
-const BlogCard = styled(Card)({
-  width: "80%",
-  height: "80%",
-  display: "flex",
-  flexDirection: "row",
-  alignItems: "center",
-  backgroundColor: "#F0F0F0",
-})
+const BlogCard = styled(Card)`
+  display: flex,
+  flex-direction: row,
+  align-items: center,
+  margin:auto;
+  background-color: #F0F0F0,
+  @media (max-width: 300px) {
+    width: 80px !important;
+    height: 80px !important;
+  }
+`
 const BlogDetails = styled(Box)({
   display: "flex",
   flexDirection: "column",
@@ -29,7 +32,7 @@ const Links = styled(Link)({
 
 const BCard = ({ data, readTime }) => (
   <BlogCard>
-    <Box width={[3 / 5, 1 / 3, 1 / 3]}>
+    <Box>
       <Img
         style={{ borderRadius: "20px" }}
         fluid={data.cover.childImageSharp.fluid}

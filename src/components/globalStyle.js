@@ -77,7 +77,6 @@ footer {
   background-color: #46ACC2;
   display: flex;
   padding: 16px;
-  font-family: sans-serif;
   color: white;
 }
 

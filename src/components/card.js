@@ -7,7 +7,7 @@ const animatedCss = css`
 `
 
 const primaryCss = css`
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
   color: "#353839";
 `
 
@@ -22,13 +22,11 @@ const StyledCard = styled.div`
   ${props => props.animated && animatedCss}
   ${props => props.primary && primaryCss}
 
-&:hover{
-  box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
-  background-color: #fff;
-
-}
-
-
+&:hover {
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+      0 15px 40px rgba(166, 173, 201, 0.2);
+    background-color: #fff;
+  }
 `
 
 class Card extends React.Component {
