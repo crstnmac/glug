@@ -10,7 +10,7 @@
     "@hackclub/design-system": "0.0.1-17",
     "@rebass/grid": "6.1.0",
     "@rebass/space": "4.0.5",
-    "babel-plugin-styled-components": "1.10.6",
+    "babel-plugin-styled-components": "1.10.7",
     "darkmode-js": "1.5.4",
     "gatsby": "2.18.17",
     "gatsby-cli": "2.8.22",
