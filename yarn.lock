@@ -910,12 +910,12 @@
   resolved "https://registry.yarnpkg.com/@emotion/weak-memoize/-/weak-memoize-0.2.5.tgz#8eed982e2ee6f7f4e44c253e12962980791efd46"
   integrity sha512-6U71C2Wp7r5XtFtQzYrW5iKFT67OixrSxjI4MptCHzdSVlgabczzqLe0ZSgnub/5Kp4hSbpDB1tMytZY9pwxxA==
 
-"@hackclub/design-system@0.0.1-17":
-  version "0.0.1-17"
-  resolved "https://registry.yarnpkg.com/@hackclub/design-system/-/design-system-0.0.1-17.tgz#6c1af45f5a304dd74db7bc159b32adafae0bbcbf"
-  integrity sha512-V5q3m10MNl5DnVfbGgHm4YXD5hymQBRoC06IaeF/IdwVCZYBnx4E6sQSG+J2EXJpx9aaMYPckCqqILtsF6Snkg==
+"@hackclub/design-system@0.0.1-18":
+  version "0.0.1-18"
+  resolved "https://registry.yarnpkg.com/@hackclub/design-system/-/design-system-0.0.1-18.tgz#02435f42c499ee4c648ccdb7fcdf009a87f4a6b9"
+  integrity sha512-raWDnPweLkrlnJqxyAc10Fkega8ZGpADeaB678T1X7Awliu0NX/FkzQPtcaG8k9E+agTOzTpAIgjWZuPGt7IdA==
   dependencies:
-    "@hackclub/icons" "^0.0.2"
+    "@hackclub/icons" "^0.0.3"
     lodash "^4.17.15"
     palx "1.0.2"
     prop-types "^15.7.2"
@@ -924,12 +924,10 @@
     styled-components "3.4.10"
     styled-system "1.1.7"
 
-"@hackclub/icons@^0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@hackclub/icons/-/icons-0.0.2.tgz#fcd34db70b08c8be11da752b080a53f31de08fc0"
-  integrity sha512-Y6uhVLRCwavHry6py/lm/u8nl1/1PolMyvsz2Dgf2rB6rrk3kZsE8PQaJ8/DPR5FSYcz7F6D5sZlaCp+r2/R/Q==
-  dependencies:
-    react "^16.8.3"
+"@hackclub/icons@^0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@hackclub/icons/-/icons-0.0.3.tgz#4b70c294d174ef7b58732c5888ab5e2b51dc14cb"
+  integrity sha512-V9UJo0MNl5GdTBNXQvvKa8YGhNMK4dd0tsnewGNQQLBMpfSYzN0wfxhkKyY5GT5rFqmxAnt0lElW1ACxHRCByA==
 
 "@hapi/address@2.x.x":
   version "2.1.4"
@@ -10750,7 +10748,7 @@ react-x-ray@1.0.0-4:
     object-assign "^4.1.1"
     prop-types "^15.6.0"
 
-react@16.12.0, react@^16.0.0, react@^16.12.0, react@^16.8.3:
+react@16.12.0, react@^16.0.0, react@^16.12.0:
   version "16.12.0"
   resolved "https://registry.yarnpkg.com/react/-/react-16.12.0.tgz#0c0a9c6a142429e3614834d5a778e18aa78a0b83"
   integrity sha512-fglqy3k5E+81pA8s+7K0/T3DBCF0ZDOher1elBFzF7O6arXJgzyu/FW+COxFvAWXJoJN9KIZbT2LXlukwphYTA==
