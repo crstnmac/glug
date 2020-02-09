@@ -11,7 +11,7 @@
     "@rebass/grid": "6.1.0",
     "@rebass/space": "4.0.5",
     "babel-plugin-styled-components": "1.10.6",
-    "darkmode-js": "1.5.4",
+    "darkmode-js": "1.5.5",
     "gatsby": "2.18.17",
     "gatsby-cli": "2.8.22",
     "gatsby-image": "2.2.37",
