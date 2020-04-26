@@ -4,13 +4,14 @@ import Card from "../components/memberCard"
 import styled from "styled-components"
 import { Box } from "rebass"
 import { graphql } from "gatsby"
+import SEO from "../components/seo"
 
 function getMembers(data) {
   let members = []
 
   let memberList = data.allMarkdownRemark.edges
 
-  memberList.forEach(element => {
+  memberList.forEach((element) => {
     members.push(
       <Box width={[1, 1, 1 / 3]}>
         <Card
@@ -63,6 +64,7 @@ const Heading = styled(Box)({
 
 const Team = ({ data }) => (
   <Layout>
+    <SEO title="Team" />
     <Box
       height="100%"
       width={["100%", "80%", "80%"]}

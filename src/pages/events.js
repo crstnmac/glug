@@ -4,12 +4,13 @@ import Layout from "../components/layout"
 import styled from "styled-components"
 import { Box } from "rebass"
 import { graphql } from "gatsby"
+import SEO from "../components/seo"
 
 function getEvents(data, readTime) {
   let events = []
   let eventList = data.allMarkdownRemark.edges
 
-  eventList.forEach(element => {
+  eventList.forEach((element) => {
     events.push(
       <BlogCard
         data={element.node.frontmatter}
@@ -51,17 +52,15 @@ const Heading = styled(Box)({
 
 const EventsPage = ({ data, readTime }) => (
   <Layout>
-    <Box
-      alignSelf="center" mx="auto"
-      color="#2d3748"
-    >
+    <SEO title="Events" />
+    <Box alignSelf="center" mx="auto" color="#2d3748">
       <Heading>Events</Heading>
 
       <OutContainer>
         <Container>{getEvents(data, readTime)}</Container>
       </OutContainer>
     </Box>
-    </Layout>
+  </Layout>
 )
 
 export default EventsPage

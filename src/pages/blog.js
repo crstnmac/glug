@@ -4,14 +4,14 @@ import Layout from "../components/layout"
 import styled from "styled-components"
 import { Box } from "rebass"
 import { graphql } from "gatsby"
-
+import SEO from "../components/seo"
 
 function getBlogs(data, readTime) {
   let blogs = []
 
   let blogList = data.allMarkdownRemark.edges
 
-  blogList.forEach(element => {
+  blogList.forEach((element) => {
     blogs.push(
       <BlogCard
         data={element.node.frontmatter}
@@ -53,6 +53,7 @@ const Heading = styled(Box)({
 
 const BlogsPage = ({ data, readTime }) => (
   <Layout>
+    <SEO title="Blogs" />
     <Box alignSelf="center" mx="auto" color="#2d3748">
       <Heading>Blog</Heading>
 
@@ -60,7 +61,7 @@ const BlogsPage = ({ data, readTime }) => (
         <Container>{getBlogs(data, readTime)}</Container>
       </OutContainer>
     </Box>
-    </Layout>
+  </Layout>
 )
 
 export default BlogsPage
