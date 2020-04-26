@@ -4,7 +4,6 @@ import Layout from "../components/layout"
 import styled from "styled-components"
 import { Box } from "rebass"
 import { graphql } from "gatsby"
-import SEO from "../components/seo"
 
 function getEvents(data, readTime) {
   let events = []
@@ -26,16 +25,9 @@ const OutContainer = styled(Box)({
   fontFamily: "Varela Round, sans-serif",
   display: "flex",
   flexDirection: "row",
-  maxWidth: "1280px",
-  paddingTop: "60px",
-  margin: "0 auto",
-  height: "auto",
   flexWrap: "wrap",
   flexFlow: "column",
-  justifyContent: "space-around",
-  border: "6px dashed #7a49ff",
   borderRadius: "10px",
-  padding: "10px",
 })
 
 const Container = styled(Box)({
@@ -59,13 +51,8 @@ const Heading = styled(Box)({
 
 const EventsPage = ({ data, readTime }) => (
   <Layout>
-    <SEO title="Blog" />
     <Box
-      height="100%"
-      width={["100%", "80%", "80%"]}
-      marginLeft="auto"
-      marginRight="auto"
-      paddingTop="60px"
+      alignSelf="center" mx="auto"
       color="#2d3748"
     >
       <Heading>Events</Heading>
@@ -74,7 +61,7 @@ const EventsPage = ({ data, readTime }) => (
         <Container>{getEvents(data, readTime)}</Container>
       </OutContainer>
     </Box>
-  </Layout>
+    </Layout>
 )
 
 export default EventsPage

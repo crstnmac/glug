@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import styled from "styled-components"
 import { Box } from "rebass"
 import { graphql } from "gatsby"
-import SEO from "../components/seo"
+
 
 function getBlogs(data, readTime) {
   let blogs = []
@@ -27,13 +27,9 @@ const OutContainer = styled(Box)({
   fontFamily: "Varela Round, sans-serif",
   display: "flex",
   flexDirection: "row",
-  paddingTop: "60px",
-  margin: "auto",
-  height: "auto",
   flexWrap: "wrap",
   flexFlow: "column",
   borderRadius: "10px",
-  padding: "10px",
 })
 
 const Container = styled(Box)({
@@ -57,15 +53,14 @@ const Heading = styled(Box)({
 
 const BlogsPage = ({ data, readTime }) => (
   <Layout>
-    <SEO title="Blog" />
-    <Box alignSelf="center" mx="auto" paddingTop="60px" color="#2d3748">
+    <Box alignSelf="center" mx="auto" color="#2d3748">
       <Heading>Blog</Heading>
 
       <OutContainer>
         <Container>{getBlogs(data, readTime)}</Container>
       </OutContainer>
     </Box>
-  </Layout>
+    </Layout>
 )
 
 export default BlogsPage

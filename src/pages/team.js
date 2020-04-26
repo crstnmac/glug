@@ -4,7 +4,6 @@ import Card from "../components/memberCard"
 import styled from "styled-components"
 import { Box } from "rebass"
 import { graphql } from "gatsby"
-import SEO from "../components/seo"
 
 function getMembers(data) {
   let members = []
@@ -64,13 +63,11 @@ const Heading = styled(Box)({
 
 const Team = ({ data }) => (
   <Layout>
-    <SEO title="Team" />
     <Box
       height="100%"
       width={["100%", "80%", "80%"]}
       marginLeft="auto"
       marginRight="auto"
-      paddingTop="60px"
       color="#2d3748"
     >
       <Heading>Team</Heading>

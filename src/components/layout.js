@@ -11,9 +11,10 @@ export default function Layout({ children }) {
     <ThemeContext.Consumer>
       {theme => (
         <div>
-          <Box margin="0">
+          <Box margin="0" padding="0" >
+                    <Navbar />
+
             <Global />
-            <Navbar />
             <Box
               marginTop="90px"
               minHeight="100%"

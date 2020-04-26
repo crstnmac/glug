@@ -71,7 +71,13 @@ module.exports = {
       },
     },
     `gatsby-plugin-emotion`,
-    `gatsby-transformer-sharp`,
+    
+    {
+      resolve: `gatsby-transformer-sharp`,
+      options: {
+                checkSupportedExtensions: false,
+      },
+    },
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
