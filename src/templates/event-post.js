@@ -58,7 +58,7 @@ export default function Template({
       <OutContainer>
         <Helmet title={`Your Event Name - ${post.frontmatter.title}`} />
 
-        <Wrapper width={["80%", "80%", "60%"]}>
+        <Wrapper width={["80%", "80%", "60%"]} mx="auto">
           <Dotted>
             <Text fontSize={[5, 5, 6]} fontWeight="bold" py={3}>
               {post.frontmatter.title}
