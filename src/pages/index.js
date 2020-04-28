@@ -22,6 +22,7 @@ function IndexPage() {
         flexWrap="wrap"
         flexFlow="column"
         justifyContent="space-between"
+        paddingTop="2em"
       >
         <Top />
         <Middle />

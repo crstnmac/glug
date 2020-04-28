@@ -48,7 +48,7 @@ const Link = styled.a`
   color: "inherited";
   text-decoration: none;
   text-align: center;
-
+  background-clip: text;
   -webkit-background-clip: "text";
 `
 
@@ -56,7 +56,7 @@ const Pic = styled(Image)({})
 
 const Top = () => (
   <ThemeContext.Consumer>
-    {theme => (
+    {(theme) => (
       <Container>
         <Box width={[1, 1 / 2]} alignSelf="center" p={3}>
           <Left>

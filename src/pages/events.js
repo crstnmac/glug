@@ -53,7 +53,7 @@ const Heading = styled(Box)({
 const EventsPage = ({ data, readTime }) => (
   <Layout>
     <SEO title="Events" />
-    <Box alignSelf="center" mx="auto" color="#2d3748">
+    <Box alignSelf="center" mx="auto" paddingTop="2em" color="#2d3748">
       <Heading>Events</Heading>
 
       <OutContainer>
