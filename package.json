@@ -35,7 +35,7 @@
     "global": "4.4.0",
     "prop-types": "15.7.2",
     "react": "16.13.1",
-    "react-burger-menu": "2.6.13",
+    "react-burger-menu": "3.0.6",
     "react-dom": "16.13.1",
     "react-helmet": "6.0.0",
     "react-x-ray": "1.0.0-4",
