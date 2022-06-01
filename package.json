@@ -41,7 +41,7 @@
     "react-x-ray": "1.0.0-4",
     "rebass": "4.0.7",
     "sass": "1.26.5",
-    "sharp": "0.25.2",
+    "sharp": "0.30.5",
     "styled-components": "5.1.0",
     "styled-theming": "2.2.0",
     "webpack": "4.43.0"
